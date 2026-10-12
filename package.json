@@ -13,5 +13,8 @@
     "scm-tech"
   ],
   "author": "SCM Tech - Desenvolvimento de Software",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^63.1.2"
+  }
 }

@@ -3,265 +3,265 @@ const searchIndexData = [
     "type": "Plano de Estudo Diário",
     "badge": "Semana 1 • Dia 1",
     "title": "Família e Casamento no Plano Divino",
-    "pages": "Páginas 5 e 6, 29",
-    "textPreview": "\n 1. A Família como Instituição Divina\nA família é uma instituição criada por Deus, onde podemos viver o amor e a harmonia, bem como os desafios de viver unidos. Sendo uma instituição divina, o homem não pode corrompê-la. Deus a estabeleceu como a primeira instituição da sociedade e o alicerce fundamental de sustent...",
+    "pages": "Páginas 5, 6 e 29",
+    "textPreview": "\n 1. A Família como Instituição Divina\nA família é uma instituição criada diretamente por Deus, onde podemos viver o amor e a harmonia, bem como os desafios de viver unidos. Como instituição divina, o homem não pode corrompê-la nem redefini-la. Está no plano eterno de Deus (<mark class=\"bible-highlight\">Ef 5.31</mar...",
     "actionType": "openDay",
     "weekIndex": 1,
     "dayIndex": 1,
-    "keywords": "família e casamento no plano divino páginas 5 e 6, 29 instituição divina monogâmica e perpétua. divórcio não é a vontade de deus, concedido apenas por infidelidade ou abandono irreparável do incrédulo. ef 5.31; mt 5.31-32; 1co 7.15; gn 1.28"
+    "keywords": "família e casamento no plano divino páginas 5, 6 e 29 instituição divina perpétua e monogâmica. divórcio não é a vontade de deus, concedido apenas por adultério ou deserção irreconciliável do cônjuge incrédulo. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 1 • Dia 2",
     "title": "As Ordenanças: Batismo e Ceia do Senhor",
-    "pages": "Páginas 7, 8, 23, 24, 90, 91, 92",
-    "textPreview": "\n 1. Ordenanças versus Sacramentos\nPara os Batistas, o Batismo e a Ceia do Senhor são ordenanças, atos memoriais e simbólicos ordenados por Cristo, e não sacramentos que conferem graça salvífica automática (ex opere operato). Nenhum crente recebe graça especial sobrenatural pelo simples ato de participar d...",
+    "pages": "Páginas 7, 8, 23, 24, 90 a 92",
+    "textPreview": "\n 1. Ordenanças versus Sacramentos\nPara os Batistas, o Batismo e a Ceia do Senhor são ordenanças, mandamentos memoriais e simbólicos ordenados diretamente por Jesus Cristo, e não sacramentos que conferem graça salvífica mágica (ex opere operato). O crente não recebe graça especial ou automática pelo simple...",
     "actionType": "openDay",
     "weekIndex": 1,
     "dayIndex": 2,
-    "keywords": "as ordenanças: batismo e ceia do senhor páginas 7, 8, 23, 24, 90, 91, 92 ordenanças simbólicas e memoriais instituídas por jesus. o batismo por imersão não salva (ex: ladrão da cruz). a ceia é memorial e não confere graça intrínseca. mt 28.19; cl 2.12; 1co 11.23-26; lc 23.42-43"
+    "keywords": "as ordenanças: batismo e ceia do senhor páginas 7, 8, 23, 24, 90 a 92 batismo por imersão e ceia são ordenanças simbólicas/memoriais que não salvam nem conferem graça especial. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 1 • Dia 3",
     "title": "Autonomia da Igreja Local e Governo Congregacional",
-    "pages": "Páginas 8, 22, 23, 88, 89, 90",
-    "textPreview": "\n 1. Definição da Igreja Neotestamentária\nA Igreja é uma congregação local de pessoas regeneradas e batizadas após pública profissão de fé. Não é um templo físico de tijolos, mas o corpo espiritual de Cristo na história.\n\n 2. Autonomia e Governo Democrático\n Soberania Local: Cada igreja é autônoma, livre e i...",
+    "pages": "Páginas 8, 22, 23, 88 a 90",
+    "textPreview": "\n 1. Definição da Igreja Neotestamentária\nA Igreja é uma congregação local soberana de pessoas regeneradas e biblicamente batizadas após profissão de fé (<mark class=\"bible-highlight\">At 2.41-42</mark>). Não é uma instituição fria de alvenaria, mas o Corpo espiritual vivo de Cristo.\n\n 2. Autonomia Local e Governo...",
     "actionType": "openDay",
     "weekIndex": 1,
     "dayIndex": 3,
-    "keywords": "autonomia da igreja local e governo congregacional páginas 8, 22, 23, 88, 89, 90 igreja local soberana com governo congregacional democrático e cristo como único cabeça. três disciplinas: formativa, corretiva e cirúrgica. mt 18.17; cl 1.18; at 20.17-28; 1co 5.1-5"
+    "keywords": "autonomia da igreja local e governo congregacional páginas 8, 22, 23, 88 a 90 igreja local soberana com governo congregacional democrático e cristo como cabeça. disciplina formativa, corretiva e cirúrgica. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 1 • Dia 4",
     "title": "Diaconato e o Ministério da Visitação",
     "pages": "Páginas 9 e 10",
-    "textPreview": "\n 1. O Diaconato Bíblico\n Origem: Instituído na igreja primitiva em Atos 6 para suprir necessidades materiais e assistência social às viúvas, liberando os apóstolos/pastores para o ministério da oração e da Palavra.\n Qualificações (1Tm 3.8-13): Devem ser homens provados, sérios, íntegros, maridos de uma só...",
+    "textPreview": "\n 1. O Ministério Diaconal\n Origem: Instituído em <mark class=\"bible-highlight\">At 6.1-4</mark> quando a igreja primitiva crescia e as viúvas necessitavam de socorro. Os apóstolos precisavam dedicar-se à oração e ao ministério da Palavra, escolhendo homens espirituais para a assistência social.\n Qualificaçõe...",
     "actionType": "openDay",
     "weekIndex": 1,
     "dayIndex": 4,
-    "keywords": "diaconato e o ministério da visitação páginas 9 e 10 diácono tem como essência o servir (1tm 3; at 6). visitação é dever de cuidado fraternal e um dos pilares de acolhimento e crescimento da igreja. 1tm 3.8-13; at 6.1-4; 1pe 4.9-10; tt 2.1-15"
+    "keywords": "diaconato e o ministério da visitação páginas 9 e 10 diaconato é o ministério do servir (at 6; 1tm 3). a visitação é o cuidado fraternal e alicerce de crescimento da igreja. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 1 • Dia 5",
     "title": "Missões, Dízimo e o Plano Cooperativo",
-    "pages": "Páginas 11, 12, 26",
-    "textPreview": "\n 1. Missões e Evangelização\n A Missão Primordial: Evangelizar o mundo é o propósito supremo da igreja na terra. A igreja que não faz missões atrofia.\n Compromisso Universal: Nenhum crente é dispensado do mandamento de testemunhar de Cristo. O primeiro missionário foi o próprio Deus, enviando Seu Filho uni...",
+    "pages": "Páginas 11, 12 e 26",
+    "textPreview": "\n 1. Missões: A Missão Primordial da Igreja\nA evangelização global é a missão principal da igreja (<mark class=\"bible-highlight\">Mc 16.15</mark>). Nasceu do amor eterno de Deus. Numa igreja viva, todo crente é vocacionado a ser um ganhador de almas; a igreja que se omite em missões entra em processo de atrofia. O pr...",
     "actionType": "openDay",
     "weekIndex": 1,
     "dayIndex": 5,
-    "keywords": "missões, dízimo e o plano cooperativo páginas 11, 12, 26 missões é a vocação máxima da igreja. o dízimo é ato de amor e gratidão para sustento da obra. o plano cooperativo viabiliza missões em escala global. mc 16.15; gn 28.20-22; ml 3.8-10; 2co 9.7"
+    "keywords": "missões, dízimo e o plano cooperativo páginas 11, 12 e 26 missões é a prioridade suprema da igreja viva. o dízimo sustenta o reino por gratidão. o plano cooperativo viabiliza missões mundiais. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 1 • Dia 6",
-    "title": "Identidade Batista, Declaração da CBB e Quiz Semanal 1",
-    "pages": "Páginas 13, 14, 31, 32, 33",
-    "textPreview": "\n 1. Origem Histórica e Distintivos Batistas\nOs discípulos designados \"batistas\" surgiram no século XVII exigindo o batismo exclusivamente de convertidos regenerados, herdando a ênfase dos anabatistas (os que batizam de novo).\n\n 2. Os 6 Princípios Históricos Inegociáveis:\n1. Sola Scriptura: Aceitação da Bíb...",
+    "title": "Declaração da CBB ✝, As 10 Razões e Quiz Semanal 1",
+    "pages": "Páginas 13, 14, 31 a 33",
+    "textPreview": "\n 1. Origem Histórica e Princípios Notabilizados da CBB ✝\nA designação \"batista\" consolidou-se no século XVII ligada à defesa incansável do batismo exclusivo de pessoas regeneradas (raiz anabatista).\n Os 6 Princípios Históricos Inegociáveis:\n  1. Escrituras Sagradas como única regra inerrante de fé e prática (<...",
     "actionType": "openDay",
     "weekIndex": 1,
     "dayIndex": 6,
-    "keywords": "identidade batista, declaração da cbb e quiz semanal 1 páginas 13, 14, 31, 32, 33 bíblia como única regra; igreja regenerada; separação igreja-estado; sacerdócio de todos os crentes e cooperação missionária voluntária. 2tm 3.16-17; at 5.29; 1tm 2.5; 1pe 2.9"
+    "keywords": "declaração da cbb ✝, as 10 razões e quiz semanal 1 páginas 13, 14, 31 a 33 escrituras como regra única; autonomia de regenerados; separação igreja-estado; culto simples e sacerdócio universal. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 2 • Dia 1",
     "title": "Prolegômenos: O que é Teologia e Doutrina",
-    "pages": "Páginas 34, 35, 36",
-    "textPreview": "\n 1. Definição de Teologia e Doutrina\n Teologia: É o conhecimento sistematizado de Deus e de suas relações com o universo. Compreende a análise cuidadosa e a declaração metódica da doutrina cristã.\n Doutrina: É aquilo que as Sagradas Escrituras, como um todo coerente, ensinam a respeito de um tópico ou tem...",
+    "pages": "Páginas 34, 35 e 36",
+    "textPreview": "\n 1. Definição de Teologia e Doutrina\n Teologia: Conhecimento sistematizado de Deus e de Suas relações com o universo, compreendendo a análise e declaração metódica da doutrina cristã.\n Quem é Deus: O Espírito Infinito e perfeito em quem todas as coisas têm a sua fonte, sustentação e fim (<mark class=\"bibl...",
     "actionType": "openDay",
     "weekIndex": 2,
     "dayIndex": 1,
-    "keywords": "prolegômenos: o que é teologia e doutrina páginas 34, 35, 36 teologia é o conhecimento sistematizado de deus. deus é transcendente (acima e distinto da criação) e imanente (presente e ativo no mundo). jo 4.24; jr 9.23-24; is 55.8-9; sl 139.7-10"
+    "keywords": "prolegômenos: o que é teologia e doutrina páginas 34, 35 e 36 teologia é o conhecimento sistematizado de deus. deus é imanente (ativo no mundo) e transcendente (infinitamente superior à criação). undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 2 • Dia 2",
     "title": "Revelação Geral e Revelação Especial de Deus",
     "pages": "Páginas 36 a 40",
-    "textPreview": "\n 1. Necessidade da Revelação\nO homem finito e pecador jamais poderia alcançar o Deus infinito por seus próprios esforços mentais. Para haver conhecimento e comunhão, Deus precisou se autocomunicar graciosamente.\n\n 2. Revelação Geral\n Definição: Comunicação de Deus acessível a todos os seres humanos através ...",
+    "textPreview": "\n 1. A Necessidade da Revelação\nSendo os homens finitos e pecadores, e Deus infinito em santidade, o ser humano jamais poderia alcançar o Criador por sua própria razão especulativa. O conhecimento só é possível porque Deus graciosamente Se fez conhecido.\n\n 2. A Revelação Geral\n Definição: Comunicação não-ver...",
     "actionType": "openDay",
     "weekIndex": 2,
     "dayIndex": 2,
-    "keywords": "revelação geral e revelação especial de deus páginas 36 a 40 revelação geral manifesta-se na criação e consciência (não salva, deixa o homem culpado). revelação especial é salvífica e proposicional nas escrituras e em cristo. sl 19.1-2; rm 1.18-21; hb 1.1-2; 2tm 3.15"
+    "keywords": "revelação geral e revelação especial de deus páginas 36 a 40 revelação geral (natureza, consciência, história) não salva, torna o homem culpado. revelação especial (escrituras e cristo) é verbal, pessoal e salvadora. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 2 • Dia 3",
     "title": "Inspiração e Inerrância das Sagradas Escrituras",
     "pages": "Páginas 41 a 45",
-    "textPreview": "\n 1. Inspiração Bíblica\n Definição: A influência sobrenatural do Espírito Santo sobre os autores bíblicos, garantindo que o texto original registrado fosse a autêntica Palavra de Deus sem erro.\n Distinções Importantes:\n   Revelação: Comunicação da verdade que a mente humana não poderia descobrir sozinha...",
+    "textPreview": "\n 1. Inspiração Bíblica\n Definição: A influência sobrenatural do Espírito Santo sobre os autores das Escrituras, garantindo que o texto registrado fosse a autêntica Palavra de Deus sem erro (<mark class=\"bible-highlight\">2Tm 3.16</mark>; <mark class=\"bible-highlight\">2Pe 1.20-21</mark>).\n Distinções Essencia...",
     "actionType": "openDay",
     "weekIndex": 2,
     "dayIndex": 3,
-    "keywords": "inspiração e inerrância das sagradas escrituras páginas 41 a 45 inspiração verbal e plena: espírito dirigiu pensamentos e palavras originais. a bíblia é inerrante e autoridade final em todas as suas afirmações. 2tm 3.16; 2pe 1.20-21; sl 119.96; jo 10.35"
+    "keywords": "inspiração e inerrância das sagradas escrituras páginas 41 a 45 inspiração verbal e plena: o espírito guiou as palavras originais. a bíblia é inerrante e autoridade final em todas as suas afirmações. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 2 • Dia 4",
     "title": "A Natureza, os Nomes e os Atributos de Deus",
     "pages": "Páginas 46 a 48",
-    "textPreview": "\n 1. Definições de Deus\n Breve Catecismo de Westminster: \"Deus é espírito, infinito, eterno e imutável em seu ser, sabedoria, poder, santidade, justiça, bondade e verdade.\"\n Augustus Strong: \"Deus é o espírito eterno e perfeito em quem todas as coisas têm a sua fonte, apoio e fim.\"\n\n 2. Nomes de Deu...",
+    "textPreview": "\n 1. Nomes de Deus nas Escrituras\n No Antigo Testamento:\n   Elohim: Plural majestático de poder, grandeza e soberania criadora.\n   El: Deus forte e soberano.\n   Adonai: Meu Senhor, Mestre e Dono de todas as coisas.\n   Javé/Yahweh: O Eterno e Autoexistente (\"EU SOU\", <mark class=\"bible-highlight\">Ex ...",
     "actionType": "openDay",
     "weekIndex": 2,
     "dayIndex": 4,
-    "keywords": "a natureza, os nomes e os atributos de deus páginas 46 a 48 nomes: adonai, el, elohim, kyrios, pantokrator. atributos incomunicáveis (asseidade, imutabilidade, infinidade, unidade) e comunicáveis (amor, justiça, santidade). ex 3.14; 1tm 1.17; ml 3.6; sl 90.2"
+    "keywords": "a natureza, os nomes e os atributos de deus páginas 46 a 48 nomes: elohim, el, adonai, kyrios, pantokrator. atributos incomunicáveis (asseidade, imutabilidade, infinidade, unidade) e comunicáveis (amor, justiça, santidade). undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 2 • Dia 5",
     "title": "A Triunidade de Deus e os Decretos Divinos",
     "pages": "Páginas 48 a 53",
-    "textPreview": "\n 1. A Doutrina da Santíssima Trindade\n Definição: Deus subsiste eternamente como três pessoas distintas — Pai, Filho e Espírito Santo — sendo cada pessoa plenamente e co-igualmente Deus, e existindo um só Deus verdadeiro.\n Origem do Termo: Formulado teologicamente por Tertuliano no início do século II...",
+    "textPreview": "\n 1. A Doutrina da Santíssima Trindade\n Definição: Deus existe eternamente como três Pessoas distintas — Pai, Filho e Espírito Santo — sendo cada pessoa plenamente Deus e havendo um só Deus verdadeiro (<mark class=\"bible-highlight\">Mt 28.19</mark>; <mark class=\"bible-highlight\">2Co 13.13</mark>).\n Origem: ...",
     "actionType": "openDay",
     "weekIndex": 2,
     "dayIndex": 5,
-    "keywords": "a triunidade de deus e os decretos divinos páginas 48 a 53 um deus em três pessoas co-iguais (tertuliano). igualdade ontológica de ser e subordinação econômica de papéis. decretos visam a glória de deus. mt 28.19; 2co 13.13; ef 1.11; sl 33.11"
+    "keywords": "a triunidade de deus e os decretos divinos páginas 48 a 53 um deus em três pessoas co-iguais (tertuliano). igualdade ontológica de ser e subordinação econômica de papéis. decretos para a glória de deus. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 2 • Dia 6",
     "title": "Criação Material, Mundo Espiritual e Quiz Semanal 2",
     "pages": "Páginas 53 a 56",
-    "textPreview": "\n 1. A Doutrina da Criação Material\n Criação Ex Nihilo: Deus trouxe o universo à existência do nada, sem usar matéria preexistente, por Sua pura palavra e vontade soberana, para manifestação de Sua glória.\n Teorias Divergentes Rejeitadas:\n   Dualismo: Matéria eterna coexistindo com Deus.\n   Emanação:...",
+    "textPreview": "\n 1. A Criação Material Ex Nihilo\n Definição: Obra em que Deus trouxe à existência, do nada (ex nihilo), sem matéria preexistente, tudo o que existe para manifestação de Sua glória (<mark class=\"bible-highlight\">Gn 1.1</mark>; <mark class=\"bible-highlight\">Cl 1.16</mark>).\n Teorias Rejeitadas: Dualismo (...",
     "actionType": "openDay",
     "weekIndex": 2,
     "dayIndex": 6,
-    "keywords": "criação material, mundo espiritual e quiz semanal 2 páginas 53 a 56 criação ex nihilo (do nada) para a glória de deus. anjos são seres espirituais criados; satanás e demônios são anjos rebeldes. providência sustenta o cosmos. gn 1.1; cl 1.16; sl 104.24; ne 9.6"
+    "keywords": "criação material, mundo espiritual e quiz semanal 2 páginas 53 a 56 criação ex nihilo (do nada) para a glória de deus. anjos são seres espirituais; demônios são anjos caídos. providência sustenta o cosmos. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 3 • Dia 1",
     "title": "Antropologia: Origem, Natureza e Imagem de Deus",
     "pages": "Páginas 56 a 60",
-    "textPreview": "\n 1. A Origem e o Propósito do Homem\n Criação Especial: O homem não descende de processos cegos evolutivos; foi criado diretamente por Deus: corpo modelado do pó da terra e dimensão imaterial soprada pelo fôlego divino (Gn 2.7).\n Propósito Supremo: Conhecer a Deus, amá-Lo e glorificá-Lo em tudo (Is 43.7).\n...",
+    "textPreview": "\n 1. A Origem e Propósito do Homem\nO homem foi criado diretamente por Deus: seu corpo formado do pó da terra e sua alma/espírito pelo sopro imediato de Deus (<mark class=\"bible-highlight\">Gn 2.7</mark>). Criado para a glória de Deus (<mark class=\"bible-highlight\">Is 43.7</mark>).\n\n 2. A Constituição da Natureza H...",
     "actionType": "openDay",
     "weekIndex": 3,
     "dayIndex": 1,
-    "keywords": "antropologia: origem, natureza e imagem de deus páginas 56 a 60 criado do pó e sopro divino para glorificar a deus. possui imago dei nos aspectos moral, espiritual, mental e relacional. dicotomia vs. tricotomia. gn 1.26-27; gn 2.7; is 43.7; ec 12.7"
+    "keywords": "antropologia: origem, natureza e imagem de deus páginas 56 a 60 homem formado do pó e sopro divino para glorificar a deus. possui imago dei moral, espiritual, mental e relacional. dicotomia vs. tricotomia. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 3 • Dia 2",
     "title": "Hamartiologia: A Queda, Imputação e Depravação Total",
     "pages": "Páginas 60 a 64",
-    "textPreview": "\n 1. Definição Bíblica de Pecado\nConforme o Catecismo Maior, pecado é qualquer falta de conformidade com, ou transgressão de qualquer lei de Deus dada como regra à criatura moral (seja por pensamento, palavra, omissão, ato ou disposição interna). O pecado gera culpa (violação da justiça) e poluição/corrupção...",
+    "textPreview": "\n 1. Definição Bíblica de Pecado\nConforme o Catecismo Maior, o pecado é qualquer falta de conformidade com, ou transgressão de qualquer lei de Deus dada como regra à criatura racional. Envolve culpa (relação com a justiça) e poluição/corrupção (afronta à santidade de Deus).\n\n 2. Origem do Pecado e Teorias...",
     "actionType": "openDay",
     "weekIndex": 3,
     "dayIndex": 2,
-    "keywords": "hamartiologia: a queda, imputação e depravação total páginas 60 a 64 pecado é transgressão da lei divina gerando culpa e corrupção. a depravação total contamina todo o ser. o castigo culmina na morte espiritual, física e eterna. rm 5.12; rm 3.23; rm 6.23; ef 2.1-3"
+    "keywords": "hamartiologia: a queda, imputação e depravação total páginas 60 a 64 pecado é transgressão da lei divina gerando culpa e corrupção. a depravação total contamina todo o ser. o castigo abrange morte espiritual, física e eterna. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 3 • Dia 3",
     "title": "Cristologia: A Pessoa de Cristo e Heresias Históricas",
     "pages": "Páginas 64 a 68",
-    "textPreview": "\n 1. A União Hipostática\nA doutrina ortodoxa bíblica ensina que Nosso Senhor Jesus Cristo é uma só Pessoa indivisível, na qual subsistem perfeitamente duas naturezas: verdadeiro Deus e verdadeiro homem, sem confusão, sem mudança, sem divisão e sem separação.\n\n 2. Necessidade da Dupla Natureza\n Por que prec...",
+    "textPreview": "\n 1. A União Hipostática Ortodoxa\nCristo é uma só Pessoa em quem se unem duas naturezas completas: verdadeiro Deus e verdadeiro homem (<mark class=\"bible-highlight\">Jo 1.1,14</mark>; <mark class=\"bible-highlight\">Cl 2.9</mark>).\n Por que homem? Para pagar a penalidade cabível à humanidade na carne com sofrime...",
     "actionType": "openDay",
     "weekIndex": 3,
     "dayIndex": 3,
-    "keywords": "cristologia: a pessoa de cristo e heresias históricas páginas 64 a 68 jesus: 1 pessoa e 2 naturezas (deus e homem). refutação de heresias: ebionismo e arianismo (contra divindade); docetismo e apolinarismo (contra humanidade); nestorianismo e eutiquianismo (contra a união). jo 1.1,14; cl 2.9; 1tm 2.5; hb 4.15"
+    "keywords": "cristologia: a pessoa de cristo e heresias históricas páginas 64 a 68 jesus: 1 pessoa e 2 naturezas (deus e homem). ebionismo/arianismo (contra divindade); docetismo/apolinarismo (contra humanidade); nestorianismo/eutiquianismo (contra união). undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 3 • Dia 4",
     "title": "Os Estados de Cristo: Humilhação e Exaltação",
     "pages": "Páginas 68 a 71",
-    "textPreview": "\n 1. O Estado de Humilhação de Cristo\n No que consiste: Na renúncia voluntária da glória celestial visível e a entrada na condição caída deste mundo.\n Etapas:\n  1. Encarnação e Nascimento Humilde: Gerado pelo Espírito e nascido da virgem Maria.\n  2. Kénosis (Esvaziamento): Esvaziou-se não de Sua divind...",
+    "textPreview": "\n 1. O Estado de Humilhação de Cristo\n No que consiste: Na renúncia à manifestação de Sua glória celestial e entrada na condição humilde do mundo (<mark class=\"bible-highlight\">Fp 2.6-8</mark>).\n Kénosis (Esvaziamento): Cristo esvaziou-se abrindo mão do exercício independente de Seus atributos de majestade...",
     "actionType": "openDay",
     "weekIndex": 3,
     "dayIndex": 4,
-    "keywords": "os estados de cristo: humilhação e exaltação páginas 68 a 71 humilhação: encarnação, esvaziamento (kénosis), obediência à lei, sofrimento, morte na cruz e sepultamento. exaltação: ressurreição, ascensão, assento à destra e segunda vinda gloriosa. fp 2.5-11; at 2.23-24; hb 1.3; 1co 15.3-4"
+    "keywords": "os estados de cristo: humilhação e exaltação páginas 68 a 71 humilhação: encarnação, esvaziamento (kénosis), obediência à lei, sofrimento, morte na cruz e sepultamento. exaltação: ressurreição, ascensão, assento à destra e segunda vinda gloriosa. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 3 • Dia 5",
     "title": "Os Ofícios de Cristo e a Doutrina da Expiação",
     "pages": "Páginas 71 a 75",
-    "textPreview": "\n 1. Os Três Ofícios de Cristo (Munus Triplex)\n1. Profeta: Revela perfeitamente o Pai e a verdade celestial aos homens (Dt 18.15; Jo 1.18). Ele não é mero portador de mensagens, mas a própria Fonte da revelação.\n2. Sacerdote: Reconcilia o pecador com Deus por meio de Sua expiação vicária na cruz e intercede ...",
+    "textPreview": "\n 1. Os Três Ofícios de Cristo (Munus Triplex)\n1. Profeta: Revela o Pai e a verdade celestial aos homens (<mark class=\"bible-highlight\">Dt 18.15</mark>; <mark class=\"bible-highlight\">Jo 8.26-28</mark>). Ele é a própria Fonte da revelação.\n2. Sacerdote: Reconcilia os pecadores oferecendo a Si mesmo em expiaçã...",
     "actionType": "openDay",
     "weekIndex": 3,
     "dayIndex": 5,
-    "keywords": "os ofícios de cristo e a doutrina da expiação páginas 71 a 75 profeta (revela a verdade), sacerdote (sacrifício e intercessão) e rei (governo soberano). expiação é vicária, propiciatória e substitutiva. is 53.5-6; hb 7.25; 2co 5.21; rm 3.24-25"
+    "keywords": "os ofícios de cristo e a doutrina da expiação páginas 71 a 75 profeta (revela a verdade), sacerdote (sacrifício e intercessão) e rei (governo soberano). expiação é vicária, propiciatória e substitutiva. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 3 • Dia 6",
     "title": "Revisão Geral e Quiz Semanal 3",
     "pages": "Páginas 56 a 74",
-    "textPreview": "\n Revisão Crítica da Semana 3:\n1. O Homem: Criação digna e coroada com a Imago Dei; distinção entre alma e espírito (dicotomia vs. tricotomia).\n2. A Queda: Pecado como transgressão da lei divina com consequências mortais físicas, espirituais e eternas.\n3. Cristo Homem e Deus: A união de duas naturezas pe...",
+    "textPreview": "\n Revisão Crítica da Semana 3:\n1. Antropologia: Criação especial com corpo do pó e sopro divino; imagem de Deus moral, espiritual e racional.\n2. Queda: Desobediência que gerou depravação total, culpa e morte espiritual, física e eterna.\n3. Cristologia: Verdadeiro Deus e verdadeiro homem em uma só Pessoa,...",
     "actionType": "openDay",
     "weekIndex": 3,
     "dayIndex": 6,
-    "keywords": "revisão geral e quiz semanal 3 páginas 56 a 74 homem criado à imagem de deus; queda em adão trouxe depravação total; cristo encarnou (verdadeiro deus e homem), morreu como substituto vicário e ressuscitou em triunfo. gn 1.27; rm 5.12; jo 1.14; 2co 5.21"
+    "keywords": "revisão geral e quiz semanal 3 páginas 56 a 74 homem criado à imagem de deus; queda gerou depravação total; cristo encarnou (deus e homem), morreu como substituto vicário e ressuscitou em glória. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 4 • Dia 1",
     "title": "Pneumatologia: Divindade, Pessoa e Obra do Espírito Santo",
     "pages": "Páginas 75 a 78",
-    "textPreview": "\n 1. A Plena Divindade do Espírito Santo\nO Espírito Santo é a terceira pessoa da Trindade, co-eterna e consubstancial com o Pai e o Filho:\n Recebe Nomes Divinos: Chamado expressamente de Deus (At 5.3-4; 1Co 3.16).\n Possui Perfeições Divinas: Onipresença (Sl 139.7-10), onisciência (1Co 2.10-11), onipotência...",
+    "textPreview": "\n 1. A Plena Divindade do Espírito Santo\nO Espírito Santo é Deus pleno, co-eterno e consubstancial com o Pai e o Filho:\n Nomes Divinos: Chamado diretamente de Deus (<mark class=\"bible-highlight\">At 5.3-4</mark>; <mark class=\"bible-highlight\">1Co 3.16</mark>).\n Atributos Divinos: Onipresença (<mark class=\"b...",
     "actionType": "openDay",
     "weekIndex": 4,
     "dayIndex": 1,
-    "keywords": "pneumatologia: divindade, pessoa e obra do espírito santo páginas 75 a 78 o espírito santo é deus pleno e pessoa divina (possui intelecto, vontade e afeto). no at atuava temporariamente; no nt habita permanentemente no crente regenerado. at 5.3-4; jo 14.16-17; ef 4.30; 1co 12.11"
+    "keywords": "pneumatologia: divindade, pessoa e obra do espírito santo páginas 75 a 78 o espírito santo é deus pleno e pessoa divina (possui intelecto, vontade e afeto). no at atuava temporariamente; no nt habita permanentemente no crente regenerado. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 4 • Dia 2",
     "title": "Soteriologia: Graça Comum, Eleição e a Conversão",
     "pages": "Páginas 78 a 84",
-    "textPreview": "\n 1. Graça Comum versus Graça Especial\n Graça Comum: Ações providenciais pelas quais Deus concede bênçãos gerais (chuva, sol, inteligência, ordem civil, cultura) a crentes e ímpios indiscriminadamente, refreando o mal. Não salva ninguém nem regenera a natureza decaída.\n Graça Especial/Eficaz: A interve...",
+    "textPreview": "\n 1. Graça Comum versus Graça Especial\n Graça Comum: Ações providenciais pelas quais Deus concede bênçãos gerais (chuva, sol, alimentos, razão, ordem civil) a crentes e ímpios indiscriminadamente (<mark class=\"bible-highlight\">Mt 5.45</mark>). Não é suficiente para salvar, pois reprime o mal socialmente, ma...",
     "actionType": "openDay",
     "weekIndex": 4,
     "dayIndex": 2,
-    "keywords": "soteriologia: graça comum, eleição e a conversão páginas 78 a 84 graça comum preserva o cosmos; graça especial salva. conversão une arrependimento (mudança de mente, afeto e propósito) e fé (conhecimento, assentimento e confiança). ef 2.8-9; jo 3.3; mt 5.45; at 20.21"
+    "keywords": "soteriologia: graça comum, eleição e a conversão páginas 78 a 84 graça comum preserva a sociedade (não salva). graça especial salva. conversão une arrependimento (mente, afeto, propósito) e fé (conhecimento, assentimento, confiança). undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 4 • Dia 3",
     "title": "Soteriologia: Justificação, Santificação e Perseverança",
     "pages": "Páginas 84 a 87",
-    "textPreview": "\n 1. A Justificação Forense\n Definição: Ato legal e instantâneo de Deus pelo qual Ele perdoa todos os pecados do homem e o declara justo diante de Seu tribunal, imputando-lhe a justiça de Cristo.\n Dimensões:\n   Elemento Negativo: Cancelamento da culpa e remoção de toda a penalidade da condenação.\n  ...",
+    "textPreview": "\n 1. A Justificação Forense\n Definição: Ato legal e instantâneo de Deus pelo qual Ele perdoa todos os pecados do pecador e o declara justo à Sua vista, imputando-lhe a justiça de Cristo (<mark class=\"bible-highlight\">Rm 5.1</mark>; <mark class=\"bible-highlight\">2Co 5.21</mark>).\n Dimensões: Elemento ne...",
     "actionType": "openDay",
     "weekIndex": 4,
     "dayIndex": 3,
-    "keywords": "soteriologia: justificação, santificação e perseverança páginas 84 a 87 justificação é ato forense instantâneo (declaração de justiça). santificação é processo contínuo e cooperativo. os verdadeiros santos perseveram eternamente. rm 5.1; 2co 5.21; jo 10.28-29; rm 8.38-39"
+    "keywords": "soteriologia: justificação, santificação e perseverança páginas 84 a 87 justificação é ato forense instantâneo (declaração de justiça). santificação é processo contínuo e cooperativo. os verdadeiros santos perseveram eternamente. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 4 • Dia 4",
     "title": "Escatologia, Destinos Eternos e Ética Cristã",
     "pages": "Páginas 92 a 95",
-    "textPreview": "\n 1. Escatologia Individual e o Estado Intermediário\n O que acontece após a morte física?\n   Concepção Ortodoxa Bíblica: Entre a morte física e a ressurreição corporal futura, o espírito humano entra em um estado intermediário de consciência plena: os justos desfrutam imediatamente da presença e consolo de D...",
+    "textPreview": "\n 1. Escatologia Individual e o Estado Intermediário\n Posição Ortodoxa: Entre a morte e a ressurreição corporal futura, o espírito experimenta um estado intermediário consciente: os justos na doce presença de Deus (\"dormir no Senhor\") e os ímpios em tormento consciente separados de Deus (<mark class=\"bible-high...",
     "actionType": "openDay",
     "weekIndex": 4,
     "dayIndex": 4,
-    "keywords": "escatologia, destinos eternos e ética cristã páginas 92 a 95 estado intermediário consciente (sem sono ou purgatório). segunda vinda visível e física. três visões milenares (pré, pós e amilenismo). céu e inferno eternos. at 1.11; hb 9.27; mt 25.46; ap 20-22"
+    "keywords": "escatologia, destinos eternos e ética cristã páginas 92 a 95 estado intermediário consciente (sem sono ou purgatório). segunda vinda visível e física. três visões do milênio (pré, pós e amilenismo). céu e inferno eternos. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 4 • Dia 5",
     "title": "Revisão Geral e Preparação para o Grande Simulado",
     "pages": "Páginas 5 a 95",
-    "textPreview": "\n Instruções para o Grande Simulado de 60 Questões Abertas:\n1. Este simulado cobre 100% dos 4 blocos e 95 páginas da sua apostila.\n2. Cada questão foi elaborada espelhando o rigor e o vocabulário de concílios doutrinários e provas examinadoras.\n3. Não há limite de tempo travando você: você tem total liberdad...",
+    "textPreview": "\n Preparação Final para o Grande Simulado\n1. As 60 questões abertas cobrem todos os 4 blocos e 95 páginas da apostila.\n2. Cada questão conta com correção inteligente por conceitos-chave, espelho oficial e justificativa da nota.\n3. Não há bloqueio ou pressão de cronômetro: suas respostas ficam salvas no aparelho ...",
     "actionType": "openDay",
     "weekIndex": 4,
     "dayIndex": 5,
-    "keywords": "revisão geral e preparação para o grande simulado páginas 5 a 95 manejar bem a palavra da verdade. o simulado de 60 questões abertas testa a amplitude total dos 4 módulos doutrinários. 2tm 2.15; 1pe 3.15"
+    "keywords": "revisão geral e preparação para o grande simulado páginas 5 a 95 manejar bem a palavra da verdade. o exame de 60 questões abertas consolida todo o saber teológico adquirido. undefined"
   },
   {
     "type": "Plano de Estudo Diário",
     "badge": "Semana 4 • Dia 6",
     "title": "Simulado Geral Aberto (Início das 60 Questões) e Quiz Semanal 4",
     "pages": "Páginas 75 a 95",
-    "textPreview": "\n Início do Simulado Final!\nAcesse a aba Simulado Final (60 Questões) para responder às questões discursivas oficiais. Você pode navegar livremente entre as perguntas, revisar e salvar quantas vezes quiser.\n...",
+    "textPreview": "\n Grande Simulado Oficial Disponível!\nAcesse a aba Simulado 60 Questões no topo para responder ao exame de 60 questões discursivas oficiais.\n...",
     "actionType": "openDay",
     "weekIndex": 4,
     "dayIndex": 6,
-    "keywords": "simulado geral aberto (início das 60 questões) e quiz semanal 4 páginas 75 a 95 60 questões discursivas abrangentes. responda no seu ritmo em até 3 dias com salvamento automático. 2tm 4.7-8; ap 22.20"
+    "keywords": "simulado geral aberto (início das 60 questões) e quiz semanal 4 páginas 75 a 95 60 questões abertas abrangentes. responda no seu ritmo em até 3 dias com salvamento automático. undefined"
   },
   {
     "type": "Simulado 60 Questões",

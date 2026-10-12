@@ -1,4 +1,4 @@
-// app.js - Lógica Interativa Completa do Preparatório Teológico SCM Tech
+// app.js - Lógica Interativa Completa do Preparatório Teológico SCM Tech (Versão Atualizada)
 
 // Estado Global da Aplicação
 const appState = {
@@ -14,11 +14,11 @@ const Storage = {
   getNotes: (week, day) => localStorage.getItem(`scm_note_w${week}_d${day}`) || '',
   saveNotes: (week, day, content) => localStorage.setItem(`scm_note_w${week}_d${day}`, content),
   
-  getDailyQuiz: (week, day) => {
-    const raw = localStorage.getItem(`scm_daily_quiz_w${week}_d${day}`);
+  getDailyQuiz: (week, day, qNum) => {
+    const raw = localStorage.getItem(`scm_daily_quiz_w${week}_d${day}_q${qNum}`);
     return raw ? JSON.parse(raw) : null;
   },
-  saveDailyQuiz: (week, day, data) => localStorage.setItem(`scm_daily_quiz_w${week}_d${day}`, JSON.stringify(data)),
+  saveDailyQuiz: (week, day, qNum, data) => localStorage.setItem(`scm_daily_quiz_w${week}_d${day}_q${qNum}`, JSON.stringify(data)),
 
   getWeeklyQuiz: (week) => {
     const raw = localStorage.getItem(`scm_weekly_quiz_w${week}`);
@@ -74,7 +74,7 @@ function evaluateOpenAnswer(userAnswer, keyConcepts, expectedAnswer) {
 
   const conceptCoverage = matched.length / keyConcepts.length;
   const wordCount = userAnswer.trim().split(/\s+/).length;
-  let lengthBonus = Math.min(1.0, wordCount / 35); // Bonificação por argumentação madura
+  let lengthBonus = Math.min(1.0, wordCount / 30); // Bonificação por argumentação madura
 
   let rawScore = (conceptCoverage * 8.5) + (lengthBonus * 1.5);
   let finalScore = Math.min(10, Math.max(0, Math.round(rawScore * 10) / 10));
@@ -186,8 +186,51 @@ function renderCurrentDayView() {
   if (!currentDayObj) return;
 
   const savedNote = Storage.getNotes(appState.currentWeek, appState.currentDay);
-  const savedQuiz = Storage.getDailyQuiz(appState.currentWeek, appState.currentDay);
 
+  // Calcula média das 3 questões do dia se houver respostas salvas
+  let dayTotalScore = 0;
+  let dayGradedCount = 0;
+  const quizzesHtml = currentDayObj.dailyQuizzes.map(q => {
+    const savedQ = Storage.getDailyQuiz(appState.currentWeek, appState.currentDay, q.qNum);
+    if (savedQ && savedQ.evalResult) {
+      dayTotalScore += savedQ.evalResult.score;
+      dayGradedCount++;
+    }
+
+    return `
+      <div class="single-quiz-block" id="daily_q_card_${q.qNum}">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-weight: 800; color: #1e3a8a; font-size: 0.88rem; text-transform: uppercase;">
+            Questão ${q.qNum} de 3
+          </span>
+          ${savedQ && savedQ.evalResult ? `
+            <span style="font-weight: 800; font-size: 0.85rem; color: ${savedQ.evalResult.score >= 8 ? '#15803d' : '#ca8a04'};">
+              Nota: ${savedQ.evalResult.score.toFixed(1)} / 10
+            </span>
+          ` : ''}
+        </div>
+        <p class="single-quiz-title">${q.question}</p>
+        
+        <textarea 
+          class="quiz-textarea" 
+          id="daily_input_${q.qNum}" 
+          placeholder="Digite sua resposta com base na apostila..."
+        >${savedQ ? savedQ.userAnswer : ''}</textarea>
+
+        <button class="btn-primary-action" style="padding: 7px 16px; font-size: 0.86rem;" onclick="submitDailyQuestion(${appState.currentWeek}, ${appState.currentDay}, ${q.qNum})">
+          ✓ Avaliar Questão ${q.qNum}
+        </button>
+
+        <div class="quiz-feedback-box" id="daily_feedback_${q.qNum}" style="${savedQ ? 'display: block;' : 'display: none;'}">
+          ${savedQ ? renderFeedbackHtml(savedQ.evalResult, q.expectedAnswer) : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  const dayAverage = dayGradedCount > 0 ? (dayTotalScore / dayGradedCount).toFixed(1) : null;
+
+  // Processa o conteúdo formatado
   let formattedContent = currentDayObj.content
     .replace(/^### (.*$)/gim, '<h3>$1</h3>')
     .replace(/^\* (.*$)/gim, '<li>$1</li>')
@@ -205,7 +248,7 @@ function renderCurrentDayView() {
       </div>
       <h2 class="day-title">Dia ${currentDayObj.day}: ${currentDayObj.title}</h2>
       
-      <!-- Textos Bíblicos Principais (2 por tema) -->
+      <!-- Textos Bíblicos Principais com Grifo -->
       <div class="biblical-refs-box">
         <h4>📜 Principais Textos Bíblicos que Atestam o Assunto:</h4>
         ${currentDayObj.biblicalReferences.map(ref => `
@@ -221,7 +264,7 @@ function renderCurrentDayView() {
       ${formattedContent}
     </div>
 
-    <!-- Card de Memorização Resumida (Com Siglas Bíblicas) -->
+    <!-- Card de Memorização Rápida com Textos Separados por Tema -->
     <div class="memory-card-box">
       <div class="memory-header">
         <div class="memory-title">
@@ -230,11 +273,17 @@ function renderCurrentDayView() {
         <span class="memory-badge">${currentDayObj.memoryCard.topic}</span>
       </div>
       <p class="memory-summary">${currentDayObj.memoryCard.summary}</p>
-      <div class="memory-acronyms">
-        <span class="acronym-label">Textos que validam o tópico:</span>
-        ${currentDayObj.memoryCard.biblicalAcronyms.split(';').map(sigla => `
-          <span class="acronym-pill">${sigla.trim()}</span>
-        `).join('')}
+      
+      <div class="memory-acronyms-container">
+        <span class="memory-acronyms-label">Textos que validam o tópico separados por tema:</span>
+        <div class="memory-topics-grid">
+          ${currentDayObj.memoryCard.biblicalTopics.map(bt => `
+            <div class="memory-topic-chip">
+              <span class="memory-topic-name">${bt.topic}:</span>
+              <span class="memory-topic-sigla">${bt.sigla}</span>
+            </div>
+          `).join('')}
+        </div>
       </div>
     </div>
 
@@ -252,28 +301,21 @@ function renderCurrentDayView() {
       >${savedNote}</textarea>
     </div>
 
-    <!-- Quiz Aberto do Dia -->
-    <div class="quiz-open-card">
-      <div class="quiz-open-header">
-        <span class="quiz-badge-tag">Quiz Aberto de Fixação • Dia ${currentDayObj.day}</span>
-        <span style="font-size: 0.8rem; color: #64748b; font-weight: 600;">Questão Dissertativa</span>
+    <!-- Painel de Quizzes Diários (3 Perguntas Abertas por Dia) -->
+    <div class="daily-quizzes-wrapper">
+      <div class="daily-quizzes-header">
+        <div>
+          <span class="quiz-day-badge">Treinamento Diário • 3 Questões Abertas</span>
+          <h3 style="color: #1e3a8a; font-size: 1.15rem; margin-top: 4px;">Quizzes de Fixação do Dia ${currentDayObj.day}</h3>
+        </div>
+        ${dayAverage ? `
+          <div class="daily-average-pill">
+            Média do Dia: ${dayAverage} / 10
+          </div>
+        ` : ''}
       </div>
-      <p class="quiz-question-text">${currentDayObj.dailyQuiz.question}</p>
-      
-      <textarea 
-        class="quiz-textarea" 
-        id="dailyQuizInput" 
-        placeholder="Digite sua resposta com suas próprias palavras fundamentando com os termos doutrinários da apostila..."
-      >${savedQuiz ? savedQuiz.userAnswer : ''}</textarea>
 
-      <button class="btn-primary-action" onclick="submitDailyQuiz(${appState.currentWeek}, ${appState.currentDay})">
-        ✓ Enviar Resposta para Avaliação
-      </button>
-
-      <!-- Painel de Feedback da Correção -->
-      <div class="quiz-feedback-box" id="dailyQuizFeedback" style="${savedQuiz ? 'display: block;' : 'display: none;'}">
-        ${savedQuiz ? renderFeedbackHtml(savedQuiz.evalResult, currentDayObj.dailyQuiz.expectedAnswer) : ''}
-      </div>
+      ${quizzesHtml}
     </div>
 
     <!-- Se for Dia 6: Exibir o Quiz Semanal Consolidado -->
@@ -294,22 +336,24 @@ function handleNotesInput(week, day, content) {
   }, 500);
 }
 
-// 6. Submissão e Avaliação do Quiz Diário
-function submitDailyQuiz(week, day) {
+// 6. Submissão e Avaliação das Questões Diárias Individuais (1 a 3)
+function submitDailyQuestion(week, day, qNum) {
   const currentWeekObj = studyPlanData.find(w => w.week === week);
   const currentDayObj = currentWeekObj.days.find(d => d.day === day);
-  const inputEl = document.getElementById('dailyQuizInput');
+  const questionObj = currentDayObj.dailyQuizzes.find(q => q.qNum === qNum);
+  
+  const inputEl = document.getElementById(`daily_input_${qNum}`);
   const userAnswer = inputEl.value;
 
   if (!userAnswer.trim()) {
-    alert("Por favor, digite sua resposta antes de submeter para avaliação.");
+    alert(`Por favor, digite sua resposta na Questão ${qNum} antes de avaliar.`);
     return;
   }
 
   const evalResult = evaluateOpenAnswer(
     userAnswer,
-    currentDayObj.dailyQuiz.keyConcepts,
-    currentDayObj.dailyQuiz.expectedAnswer
+    questionObj.keyConcepts,
+    questionObj.expectedAnswer
   );
 
   const quizData = {
@@ -318,12 +362,13 @@ function submitDailyQuiz(week, day) {
     timestamp: new Date().toISOString()
   };
 
-  Storage.saveDailyQuiz(week, day, quizData);
+  Storage.saveDailyQuiz(week, day, qNum, quizData);
 
-  const feedbackContainer = document.getElementById('dailyQuizFeedback');
-  feedbackContainer.innerHTML = renderFeedbackHtml(evalResult, currentDayObj.dailyQuiz.expectedAnswer);
+  const feedbackContainer = document.getElementById(`daily_feedback_${qNum}`);
+  feedbackContainer.innerHTML = renderFeedbackHtml(evalResult, questionObj.expectedAnswer);
   feedbackContainer.style.display = 'block';
 
+  renderCurrentDayView();
   renderPerformanceDashboard();
 }
 
@@ -550,7 +595,6 @@ function finishAndGradeSimulado() {
   renderSimuladoView();
   renderPerformanceDashboard();
 
-  // Rola até o topo e exibe modal de nota
   window.scrollTo({ top: 0, behavior: 'smooth' });
   alert(`Simulado Avaliado com Sucesso!\n\nNota Geral: ${finalAverage} de 10.0 (${finalPercent}% de acerto)\nQuestões Respondidas: ${answeredCount} de 60\n\nConfira abaixo o espelho e feedback detalhado questão por questão.`);
 }
@@ -580,7 +624,7 @@ function renderApostilaReader() {
       <h2 style="color: #1e3a8a; font-size: 1.4rem;">${currentSec.title}</h2>
       <span class="badge-apostila">Páginas ${currentSec.pages}</span>
     </div>
-    <div style="font-size: 1rem; color: #1e293b; line-height: 1.7;">
+    <div style="font-size: 1rem; color: #1e293b; line-height: 1.75;">
       ${formatted}
     </div>
   `;
@@ -683,7 +727,6 @@ function renderPerformanceDashboard() {
   const container = document.getElementById('performanceContent');
   if (!container) return;
 
-  // Cálculo da nota das semanas
   let totalWeeksScore = 0;
   let gradedWeeksCount = 0;
   const weekSummaries = [1, 2, 3, 4].map(wNum => {
@@ -779,7 +822,7 @@ function initPWA() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js').then(reg => {
-        console.log('ServiceWorker SCM Tech registrado com sucesso:', reg.scope);
+        console.log('ServiceWorker SCM Tech registrado:', reg.scope);
       }).catch(err => {
         console.log('Falha ao registrar ServiceWorker:', err);
       });
