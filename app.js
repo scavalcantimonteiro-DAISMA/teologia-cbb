@@ -9,31 +9,161 @@ const appState = {
   deferredPrompt: null
 };
 
-// Funções de Persistência no LocalStorage
+// Sincronização em Nuvem Automática (Cofre Único Vercel Blob - Sem Login / Sem PIN)
+const CloudSync = {
+  syncTimeout: null,
+  isSyncing: false,
+
+  getAllLocalData: () => {
+    const data = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith('scm_')) {
+        data[key] = localStorage.getItem(key);
+      }
+    }
+    return data;
+  },
+
+  scheduleUpload: (delay = 1000) => {
+    CloudSync.updateSyncBadge('saving');
+    clearTimeout(CloudSync.syncTimeout);
+    CloudSync.syncTimeout = setTimeout(async () => {
+      try {
+        const localData = CloudSync.getAllLocalData();
+        const res = await fetch('/api/sync', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ data: localData })
+        });
+        if (res.ok) {
+          CloudSync.updateSyncBadge('synced');
+        } else {
+          CloudSync.updateSyncBadge('error');
+        }
+      } catch (e) {
+        console.warn('Erro ao sincronizar na nuvem:', e);
+        CloudSync.updateSyncBadge('offline');
+      }
+    }, delay);
+  },
+
+  fetchAndApply: async () => {
+    try {
+      CloudSync.updateSyncBadge('checking');
+      const res = await fetch('/api/sync?t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) {
+        CloudSync.updateSyncBadge('synced');
+        return;
+      }
+      const result = await res.json();
+      if (!result || !result.data) {
+        CloudSync.updateSyncBadge('synced');
+        return;
+      }
+
+      const cloudData = result.data;
+      let hasChanges = false;
+      let hasLocalNewData = false;
+
+      // Mescla com dados locais
+      for (const [key, val] of Object.entries(cloudData)) {
+        if (key.startsWith('scm_') && val !== null && val !== undefined) {
+          const localVal = localStorage.getItem(key);
+          if (localVal !== val) {
+            localStorage.setItem(key, val);
+            hasChanges = true;
+          }
+        }
+      }
+
+      // Se temos itens no aparelho que não subiram ainda, agenda envio
+      const localData = CloudSync.getAllLocalData();
+      for (const [k, v] of Object.entries(localData)) {
+        if (!cloudData[k] && v) {
+          hasLocalNewData = true;
+          break;
+        }
+      }
+
+      if (hasLocalNewData) {
+        CloudSync.scheduleUpload(500);
+      } else {
+        CloudSync.updateSyncBadge('synced');
+      }
+
+      // Se algo mudou, re-renderiza a visão atual para o usuário ver na hora
+      if (hasChanges) {
+        renderCurrentDayView();
+        renderSimuladoView();
+        renderPerformanceDashboard();
+      }
+    } catch (e) {
+      console.warn('Sync fetch falhou:', e);
+      CloudSync.updateSyncBadge('offline');
+    }
+  },
+
+  updateSyncBadge: (status) => {
+    const el = document.getElementById('cloudSyncStatus');
+    if (!el) return;
+    if (status === 'saving') {
+      el.innerHTML = '<span class="sync-dot saving"></span> Salvando...';
+      el.title = 'Salvando na nuvem...';
+    } else if (status === 'synced') {
+      el.innerHTML = '<span class="sync-dot synced"></span> Nuvem Conectada';
+      el.title = 'Sincronizado em tempo real entre iPhone, Tablet e PC!';
+    } else if (status === 'checking') {
+      el.innerHTML = '<span class="sync-dot checking"></span> Sincronizando...';
+    } else if (status === 'offline') {
+      el.innerHTML = '<span class="sync-dot offline"></span> Salvo no Aparelho';
+      el.title = 'Modo offline. Seus dados serão sincronizados quando houver conexão.';
+    } else if (status === 'error') {
+      el.innerHTML = '<span class="sync-dot offline"></span> Nuvem Conectada';
+    }
+  }
+};
+
+// Funções de Persistência no LocalStorage com Auto-Sync
 const Storage = {
   getNotes: (week, day) => localStorage.getItem(`scm_note_w${week}_d${day}`) || '',
-  saveNotes: (week, day, content) => localStorage.setItem(`scm_note_w${week}_d${day}`, content),
+  saveNotes: (week, day, content) => {
+    localStorage.setItem(`scm_note_w${week}_d${day}`, content);
+    CloudSync.scheduleUpload();
+  },
   
   getDailyQuiz: (week, day, qNum) => {
     const raw = localStorage.getItem(`scm_daily_quiz_w${week}_d${day}_q${qNum}`);
     return raw ? JSON.parse(raw) : null;
   },
-  saveDailyQuiz: (week, day, qNum, data) => localStorage.setItem(`scm_daily_quiz_w${week}_d${day}_q${qNum}`, JSON.stringify(data)),
+  saveDailyQuiz: (week, day, qNum, data) => {
+    localStorage.setItem(`scm_daily_quiz_w${week}_d${day}_q${qNum}`, JSON.stringify(data));
+    CloudSync.scheduleUpload();
+  },
 
   getWeeklyQuiz: (week) => {
     const raw = localStorage.getItem(`scm_weekly_quiz_w${week}`);
     return raw ? JSON.parse(raw) : {};
   },
-  saveWeeklyQuiz: (week, data) => localStorage.setItem(`scm_weekly_quiz_w${week}`, JSON.stringify(data)),
+  saveWeeklyQuiz: (week, data) => {
+    localStorage.setItem(`scm_weekly_quiz_w${week}`, JSON.stringify(data));
+    CloudSync.scheduleUpload();
+  },
 
   getSimuladoAnswer: (num) => localStorage.getItem(`scm_simulado_q_${num}`) || '',
-  saveSimuladoAnswer: (num, text) => localStorage.setItem(`scm_simulado_q_${num}`, text),
+  saveSimuladoAnswer: (num, text) => {
+    localStorage.setItem(`scm_simulado_q_${num}`, text);
+    CloudSync.scheduleUpload();
+  },
 
   getSimuladoResult: () => {
     const raw = localStorage.getItem('scm_simulado_final_result');
     return raw ? JSON.parse(raw) : null;
   },
-  saveSimuladoResult: (res) => localStorage.setItem('scm_simulado_final_result', JSON.stringify(res))
+  saveSimuladoResult: (res) => {
+    localStorage.setItem('scm_simulado_final_result', JSON.stringify(res));
+    CloudSync.scheduleUpload();
+  }
 };
 
 // Motor de Avaliação Inteligente de Questões Abertas (Dissertativas)
@@ -107,6 +237,23 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPerformanceDashboard();
   initGlobalSearch();
   initPWA();
+
+  // Inicia Sincronização em Nuvem (Cofre Único)
+  CloudSync.fetchAndApply();
+
+  // Sincroniza sempre que a aba voltar a ficar visível (ao desbloquear o celular ou tablet)
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      CloudSync.fetchAndApply();
+    }
+  });
+
+  // Checagem periódica automática a cada 20 segundos
+  setInterval(() => {
+    if (document.visibilityState === 'visible') {
+      CloudSync.fetchAndApply();
+    }
+  }, 20000);
 });
 
 // 1. Navegação de Abas
@@ -821,7 +968,7 @@ function exportNotesAsFile() {
 function initPWA() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js').then(reg => {
+      navigator.serviceWorker.register('/sw.js').then(reg => {
         console.log('ServiceWorker SCM Tech registrado:', reg.scope);
       }).catch(err => {
         console.log('Falha ao registrar ServiceWorker:', err);

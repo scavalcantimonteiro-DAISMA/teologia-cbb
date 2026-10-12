@@ -16,5 +16,8 @@
   "license": "MIT",
   "devDependencies": {
     "vercel": "^63.1.2"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.8.1"
   }
 }
