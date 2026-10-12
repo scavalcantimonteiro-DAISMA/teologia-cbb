@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Teologia Batista - Preparatório Oficial | SCM Tech</title>
+  
+  <!-- Meta tags PWA para Android & iOS -->
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Teologia SCM">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/logo.jpg">
+
+  <!-- Estilos da Aplicação -->
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- Topo & Identidade Visual SCM Tech -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-wrapper" onclick="switchTab('plano')">
+        <img src="assets/logo.jpg" alt="Logo SCM Tech" class="brand-logo" onerror="this.src='scm-tech-logo.jpg'">
+        <div class="brand-text">
+          <h1>Teologia Batista • CBB</h1>
+          <span>Preparatório Oficial de 60 Questões • 4 Semanas</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button class="btn-icon-search" onclick="openGlobalSearch()" title="Pesquisar qualquer tema (Ctrl+K)">
+          <span>🔍</span>
+          <span style="display: inline-block;">Pesquisar Tema</span>
+        </button>
+        <button class="btn-install-pwa" id="btnInstallPwa">
+          📲 Instalar App
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Navegação por Abas -->
+  <nav class="nav-tabs-wrapper">
+    <div class="nav-tabs-container">
+      <button class="nav-tab active" data-tab="plano">
+        📅 Plano 4 Semanas
+      </button>
+      <button class="nav-tab" data-tab="simulado">
+        📝 Simulado 60 Questões
+      </button>
+      <button class="nav-tab" data-tab="apostila">
+        📖 Apostila Completa (95 págs)
+      </button>
+      <button class="nav-tab" data-tab="desempenho">
+        📊 Meu Desempenho
+      </button>
+    </div>
+  </nav>
+
+  <!-- Área de Conteúdo Principal -->
+  <main class="main-content">
+
+    <!-- 1. ABA DO PLANO DE ESTUDOS DE 4 SEMANAS -->
+    <section id="plano" class="tab-pane active">
+      <!-- Seletor das 4 Semanas -->
+      <div class="weeks-chips" id="weeksChipsContainer"></div>
+
+      <!-- Seletor dos Dias da Semana Selecionada -->
+      <div class="days-strip" id="daysStripContainer"></div>
+
+      <!-- Visão do Dia Atual com Conteúdo Íntegro, Card de Memorização, Anotações e Quiz -->
+      <div id="dayViewContent"></div>
+    </section>
+
+    <!-- 2. ABA DO SIMULADO FINAL DAS 60 QUESTÕES ABERTAS -->
+    <section id="simulado" class="tab-pane">
+      <div class="simulado-control-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h2 style="color: #1e3a8a; font-size: 1.4rem;">Simulado Oficial: 60 Questões Abertas</h2>
+            <p style="font-size: 0.88rem; color: #64748b;">
+              Abrange 100% da apostila. Suas respostas são salvas em tempo real para você responder com calma em até 3 dias.
+            </p>
+          </div>
+          <button class="btn-primary-action" onclick="finishAndGradeSimulado()">
+            ✓ Finalizar e Avaliar Simulado
+          </button>
+        </div>
+
+        <div class="simulado-progress-wrapper">
+          <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; color: #1e3a8a; margin-bottom: 6px;">
+            <span>Progresso das Respostas:</span>
+            <span id="simuladoProgressText">0 de 60 respondidas (0%)</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="simuladoProgressBar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista das 60 Questões -->
+      <div class="simulado-questions-list" id="simuladoQuestionsList"></div>
+    </section>
+
+    <!-- 3. ABA DO LEITOR DA APOSTILA COMPLETA -->
+    <section id="apostila" class="tab-pane">
+      <div class="reader-container">
+        <!-- Sumário Lateral Interativo -->
+        <aside class="reader-sidebar" id="apostilaSidebarNav"></aside>
+        
+        <!-- Leitor de Texto Integral -->
+        <article class="reader-main-text" id="apostilaMainContent"></article>
+      </div>
+    </section>
+
+    <!-- 4. ABA DO PAINEL DE DESEMPENHO -->
+    <section id="desempenho" class="tab-pane">
+      <div id="performanceContent"></div>
+    </section>
+
+  </main>
+
+  <!-- Modal de Pesquisa Rápida Global Instantânea -->
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal-search-card">
+      <div class="modal-search-header">
+        <span style="font-size: 1.2rem;">🔍</span>
+        <input 
+          type="text" 
+          class="search-input-field" 
+          id="globalSearchInput" 
+          placeholder="Pesquisar tema, doutrina, termo ou texto bíblico..."
+          autocomplete="off"
+        >
+        <button class="btn-close-modal" onclick="closeGlobalSearch()" title="Fechar">✕</button>
+      </div>
+      <div class="search-results-list" id="searchResultsContainer">
+        <p style="color: #64748b; font-size: 0.9rem; text-align: center; padding: 20px;">
+          Digite uma palavra como "Docetismo", "Inerrância", "Diácono", "Justificação", "Plano Cooperativo"...
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé Oficial com Logomarca e Menção SCM Tech -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="SCM Tech" class="footer-logo" onerror="this.src='scm-tech-logo.jpg'">
+        <div class="footer-copy">
+          <strong>SCM Tech • Desenvolvimento de Software</strong>
+          <div>Desenvolvido por SCM Tech - Desenvolvimento de Software</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <span>© 2026 SCM Tech</span>
+        <span>•</span>
+        <span>Preparatório Teológico CBB</span>
+        <span>•</span>
+        <span>Versão PWA 1.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts de Dados e Aplicação -->
+  <script src="data/studyPlanData.js"></script>
+  <script src="data/simuladoData.js"></script>
+  <script src="data/apostilaData.js"></script>
+  <script src="data/searchIndexData.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

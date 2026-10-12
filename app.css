@@ -1,0 +1,944 @@
+/* app.css - Estilos Visuais Elegantes e Claros (SCM Tech) */
+:root {
+  --primary: #1e3a8a;
+  --primary-light: #3b82f6;
+  --primary-subtle: #eff6ff;
+  --secondary: #475569;
+  --accent: #0284c7;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --border: #e2e8f0;
+  --border-focus: #3b82f6;
+  --success: #16a34a;
+  --success-bg: #f0fdf4;
+  --warning: #ca8a04;
+  --warning-bg: #fefce8;
+  --danger: #dc2626;
+  --danger-bg: #fef2f2;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Barra Superior */
+.app-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
+
+.brand-text h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.brand-text span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-icon-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary-subtle);
+  color: var(--primary);
+  border: 1px solid #bfdbfe;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-icon-search:hover {
+  background: #dbeafe;
+  transform: translateY(-1px);
+}
+
+.btn-install-pwa {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  background: var(--success);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Navegação por Abas */
+.nav-tabs-wrapper {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.nav-tabs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.nav-tab {
+  padding: 12px 18px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-tab:hover {
+  color: var(--primary);
+}
+
+.nav-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+/* Área Principal */
+.main-content {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Painéis de Conteúdo */
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sub-navegação das Semanas e Dias */
+.weeks-chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.chip-week {
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.chip-week:hover {
+  border-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.chip-week.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.25);
+}
+
+.days-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 4px 2px 16px;
+  margin-bottom: 20px;
+}
+
+.day-card-pill {
+  flex: 1;
+  min-width: 130px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.day-card-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--primary-light);
+}
+
+.day-card-pill.active {
+  border-color: var(--primary);
+  background: var(--primary-subtle);
+  border-left-width: 4px;
+}
+
+.day-card-pill .pill-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.day-card-pill .pill-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Banner do Dia */
+.day-header-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.day-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.badge-apostila {
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.day-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+/* Textos Bíblicos Principais */
+.biblical-refs-box {
+  background: #f8fafc;
+  border-left: 4px solid var(--accent);
+  padding: 14px 18px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: 14px;
+}
+
+.biblical-refs-box h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bible-verse-item {
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+  color: #334155;
+}
+
+.bible-verse-item strong {
+  color: var(--primary);
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+/* Conteúdo Teológico Principal */
+.study-body-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 28px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.study-body-card h3 {
+  color: var(--primary);
+  margin: 22px 0 10px;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 6px;
+}
+
+.study-body-card h3:first-child {
+  margin-top: 0;
+}
+
+.study-body-card p {
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.study-body-card ul {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.study-body-card li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Card de Memorização Resumida (Requisito Especial) */
+.memory-card-box {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+  border: 2px solid #bfdbfe;
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin: 24px 0;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.08);
+}
+
+.memory-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.memory-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--primary);
+}
+
+.memory-badge {
+  background: #1e3a8a;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+}
+
+.memory-summary {
+  font-size: 0.96rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.memory-acronyms {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed #93c5fd;
+}
+
+.acronym-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1e40af;
+}
+
+.acronym-pill {
+  background: #ffffff;
+  border: 1px solid #3b82f6;
+  color: #1d4ed8;
+  font-weight: 700;
+  font-size: 0.84rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Seção de Anotações do Estudante */
+.notes-section-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.notes-header h4 {
+  font-size: 0.98rem;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.notes-status-badge {
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.notes-textarea {
+  width: 100%;
+  min-height: 110px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-size: 0.94rem;
+  color: var(--text-main);
+  background: #fbfcfe;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.notes-textarea:focus {
+  outline: none;
+  border-color: var(--border-focus);
+  background: #ffffff;
+}
+
+/* Caixa do Quiz Aberto */
+.quiz-open-card {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.quiz-open-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.quiz-badge-tag {
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.quiz-question-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.quiz-textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  font-size: 0.96rem;
+  line-height: 1.5;
+  color: #0f172a;
+  background: #ffffff;
+  margin-bottom: 14px;
+}
+
+.quiz-textarea:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.btn-primary-action {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary-action:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Espelho de Resposta e Feedback do Quiz */
+.quiz-feedback-box {
+  margin-top: 20px;
+  border-radius: var(--radius-sm);
+  padding: 18px;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  display: none;
+}
+
+.quiz-score-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.score-high {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.score-mid {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.score-low {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.feedback-breakdown {
+  margin: 12px 0;
+  font-size: 0.92rem;
+}
+
+.feedback-section {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+}
+
+.feedback-correct {
+  background: #f0fdf4;
+  border-left: 3px solid #22c55e;
+}
+
+.feedback-missing {
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+}
+
+.expected-answer-quote {
+  background: #f1f5f9;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-size: 0.9rem;
+  color: #334155;
+  margin-top: 10px;
+  border-left: 3px solid var(--primary);
+}
+
+/* Modal de Pesquisa Rápida Global */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-search-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.modal-search-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-input-field {
+  flex: 1;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.search-input-field:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.btn-close-modal {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.search-results-list {
+  padding: 16px 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.search-result-item {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.search-result-item:hover {
+  border-color: var(--primary-light);
+  background: var(--primary-subtle);
+  transform: translateX(3px);
+}
+
+.result-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: #e0e7ff;
+  padding: 2px 8px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.result-title {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.result-preview {
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Simulado 60 Questões */
+.simulado-control-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.simulado-progress-wrapper {
+  margin: 16px 0;
+}
+
+.progress-bar-bg {
+  background: #e2e8f0;
+  border-radius: 50px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: linear-gradient(90deg, #3b82f6, #10b981);
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.simulado-questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.simulado-q-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.simulado-q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.q-number-pill {
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.q-apostila-page {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Leitor Apostila Completa */
+.reader-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.reader-sidebar {
+  background: #f8fafc;
+  border-right: 1px solid var(--border);
+  padding: 20px 14px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.reader-nav-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  margin-bottom: 4px;
+  transition: all 0.2s;
+}
+
+.reader-nav-item:hover {
+  background: #e2e8f0;
+  color: var(--primary);
+}
+
+.reader-nav-item.active {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.reader-main-text {
+  padding: 30px;
+  overflow-y: auto;
+  max-height: 80vh;
+  line-height: 1.7;
+}
+
+/* Rodapé Oficial SCM Tech */
+.app-footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+  padding: 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  height: 38px;
+  width: auto;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.footer-copy strong {
+  color: #0f172a;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Responsividade Mobile (Android / iOS) */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px 14px;
+  }
+  .brand-text h1 {
+    font-size: 1rem;
+  }
+  .brand-logo {
+    height: 38px;
+  }
+  .reader-container {
+    grid-template-columns: 1fr;
+  }
+  .reader-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    max-height: 220px;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-brand {
+    flex-direction: column;
+  }
+}

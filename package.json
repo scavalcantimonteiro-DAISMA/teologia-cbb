@@ -1,0 +1,17 @@
+{
+  "name": "preparatorio-teologia-scm-tech",
+  "version": "1.0.0",
+  "description": "Aplicativo Preparatório de Teologia Batista CBB - SCM Tech",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "teologia",
+    "batista",
+    "cbb",
+    "scm-tech"
+  ],
+  "author": "SCM Tech - Desenvolvimento de Software",
+  "license": "MIT"
+}

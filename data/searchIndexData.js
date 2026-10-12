@@ -1,0 +1,917 @@
+const searchIndexData = [
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 1 • Dia 1",
+    "title": "Família e Casamento no Plano Divino",
+    "pages": "Páginas 5 e 6, 29",
+    "textPreview": "\n 1. A Família como Instituição Divina\nA família é uma instituição criada por Deus, onde podemos viver o amor e a harmonia, bem como os desafios de viver unidos. Sendo uma instituição divina, o homem não pode corrompê-la. Deus a estabeleceu como a primeira instituição da sociedade e o alicerce fundamental de sustent...",
+    "actionType": "openDay",
+    "weekIndex": 1,
+    "dayIndex": 1,
+    "keywords": "família e casamento no plano divino páginas 5 e 6, 29 instituição divina monogâmica e perpétua. divórcio não é a vontade de deus, concedido apenas por infidelidade ou abandono irreparável do incrédulo. ef 5.31; mt 5.31-32; 1co 7.15; gn 1.28"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 1 • Dia 2",
+    "title": "As Ordenanças: Batismo e Ceia do Senhor",
+    "pages": "Páginas 7, 8, 23, 24, 90, 91, 92",
+    "textPreview": "\n 1. Ordenanças versus Sacramentos\nPara os Batistas, o Batismo e a Ceia do Senhor são ordenanças, atos memoriais e simbólicos ordenados por Cristo, e não sacramentos que conferem graça salvífica automática (ex opere operato). Nenhum crente recebe graça especial sobrenatural pelo simples ato de participar d...",
+    "actionType": "openDay",
+    "weekIndex": 1,
+    "dayIndex": 2,
+    "keywords": "as ordenanças: batismo e ceia do senhor páginas 7, 8, 23, 24, 90, 91, 92 ordenanças simbólicas e memoriais instituídas por jesus. o batismo por imersão não salva (ex: ladrão da cruz). a ceia é memorial e não confere graça intrínseca. mt 28.19; cl 2.12; 1co 11.23-26; lc 23.42-43"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 1 • Dia 3",
+    "title": "Autonomia da Igreja Local e Governo Congregacional",
+    "pages": "Páginas 8, 22, 23, 88, 89, 90",
+    "textPreview": "\n 1. Definição da Igreja Neotestamentária\nA Igreja é uma congregação local de pessoas regeneradas e batizadas após pública profissão de fé. Não é um templo físico de tijolos, mas o corpo espiritual de Cristo na história.\n\n 2. Autonomia e Governo Democrático\n Soberania Local: Cada igreja é autônoma, livre e i...",
+    "actionType": "openDay",
+    "weekIndex": 1,
+    "dayIndex": 3,
+    "keywords": "autonomia da igreja local e governo congregacional páginas 8, 22, 23, 88, 89, 90 igreja local soberana com governo congregacional democrático e cristo como único cabeça. três disciplinas: formativa, corretiva e cirúrgica. mt 18.17; cl 1.18; at 20.17-28; 1co 5.1-5"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 1 • Dia 4",
+    "title": "Diaconato e o Ministério da Visitação",
+    "pages": "Páginas 9 e 10",
+    "textPreview": "\n 1. O Diaconato Bíblico\n Origem: Instituído na igreja primitiva em Atos 6 para suprir necessidades materiais e assistência social às viúvas, liberando os apóstolos/pastores para o ministério da oração e da Palavra.\n Qualificações (1Tm 3.8-13): Devem ser homens provados, sérios, íntegros, maridos de uma só...",
+    "actionType": "openDay",
+    "weekIndex": 1,
+    "dayIndex": 4,
+    "keywords": "diaconato e o ministério da visitação páginas 9 e 10 diácono tem como essência o servir (1tm 3; at 6). visitação é dever de cuidado fraternal e um dos pilares de acolhimento e crescimento da igreja. 1tm 3.8-13; at 6.1-4; 1pe 4.9-10; tt 2.1-15"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 1 • Dia 5",
+    "title": "Missões, Dízimo e o Plano Cooperativo",
+    "pages": "Páginas 11, 12, 26",
+    "textPreview": "\n 1. Missões e Evangelização\n A Missão Primordial: Evangelizar o mundo é o propósito supremo da igreja na terra. A igreja que não faz missões atrofia.\n Compromisso Universal: Nenhum crente é dispensado do mandamento de testemunhar de Cristo. O primeiro missionário foi o próprio Deus, enviando Seu Filho uni...",
+    "actionType": "openDay",
+    "weekIndex": 1,
+    "dayIndex": 5,
+    "keywords": "missões, dízimo e o plano cooperativo páginas 11, 12, 26 missões é a vocação máxima da igreja. o dízimo é ato de amor e gratidão para sustento da obra. o plano cooperativo viabiliza missões em escala global. mc 16.15; gn 28.20-22; ml 3.8-10; 2co 9.7"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 1 • Dia 6",
+    "title": "Identidade Batista, Declaração da CBB e Quiz Semanal 1",
+    "pages": "Páginas 13, 14, 31, 32, 33",
+    "textPreview": "\n 1. Origem Histórica e Distintivos Batistas\nOs discípulos designados \"batistas\" surgiram no século XVII exigindo o batismo exclusivamente de convertidos regenerados, herdando a ênfase dos anabatistas (os que batizam de novo).\n\n 2. Os 6 Princípios Históricos Inegociáveis:\n1. Sola Scriptura: Aceitação da Bíb...",
+    "actionType": "openDay",
+    "weekIndex": 1,
+    "dayIndex": 6,
+    "keywords": "identidade batista, declaração da cbb e quiz semanal 1 páginas 13, 14, 31, 32, 33 bíblia como única regra; igreja regenerada; separação igreja-estado; sacerdócio de todos os crentes e cooperação missionária voluntária. 2tm 3.16-17; at 5.29; 1tm 2.5; 1pe 2.9"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 2 • Dia 1",
+    "title": "Prolegômenos: O que é Teologia e Doutrina",
+    "pages": "Páginas 34, 35, 36",
+    "textPreview": "\n 1. Definição de Teologia e Doutrina\n Teologia: É o conhecimento sistematizado de Deus e de suas relações com o universo. Compreende a análise cuidadosa e a declaração metódica da doutrina cristã.\n Doutrina: É aquilo que as Sagradas Escrituras, como um todo coerente, ensinam a respeito de um tópico ou tem...",
+    "actionType": "openDay",
+    "weekIndex": 2,
+    "dayIndex": 1,
+    "keywords": "prolegômenos: o que é teologia e doutrina páginas 34, 35, 36 teologia é o conhecimento sistematizado de deus. deus é transcendente (acima e distinto da criação) e imanente (presente e ativo no mundo). jo 4.24; jr 9.23-24; is 55.8-9; sl 139.7-10"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 2 • Dia 2",
+    "title": "Revelação Geral e Revelação Especial de Deus",
+    "pages": "Páginas 36 a 40",
+    "textPreview": "\n 1. Necessidade da Revelação\nO homem finito e pecador jamais poderia alcançar o Deus infinito por seus próprios esforços mentais. Para haver conhecimento e comunhão, Deus precisou se autocomunicar graciosamente.\n\n 2. Revelação Geral\n Definição: Comunicação de Deus acessível a todos os seres humanos através ...",
+    "actionType": "openDay",
+    "weekIndex": 2,
+    "dayIndex": 2,
+    "keywords": "revelação geral e revelação especial de deus páginas 36 a 40 revelação geral manifesta-se na criação e consciência (não salva, deixa o homem culpado). revelação especial é salvífica e proposicional nas escrituras e em cristo. sl 19.1-2; rm 1.18-21; hb 1.1-2; 2tm 3.15"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 2 • Dia 3",
+    "title": "Inspiração e Inerrância das Sagradas Escrituras",
+    "pages": "Páginas 41 a 45",
+    "textPreview": "\n 1. Inspiração Bíblica\n Definição: A influência sobrenatural do Espírito Santo sobre os autores bíblicos, garantindo que o texto original registrado fosse a autêntica Palavra de Deus sem erro.\n Distinções Importantes:\n   Revelação: Comunicação da verdade que a mente humana não poderia descobrir sozinha...",
+    "actionType": "openDay",
+    "weekIndex": 2,
+    "dayIndex": 3,
+    "keywords": "inspiração e inerrância das sagradas escrituras páginas 41 a 45 inspiração verbal e plena: espírito dirigiu pensamentos e palavras originais. a bíblia é inerrante e autoridade final em todas as suas afirmações. 2tm 3.16; 2pe 1.20-21; sl 119.96; jo 10.35"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 2 • Dia 4",
+    "title": "A Natureza, os Nomes e os Atributos de Deus",
+    "pages": "Páginas 46 a 48",
+    "textPreview": "\n 1. Definições de Deus\n Breve Catecismo de Westminster: \"Deus é espírito, infinito, eterno e imutável em seu ser, sabedoria, poder, santidade, justiça, bondade e verdade.\"\n Augustus Strong: \"Deus é o espírito eterno e perfeito em quem todas as coisas têm a sua fonte, apoio e fim.\"\n\n 2. Nomes de Deu...",
+    "actionType": "openDay",
+    "weekIndex": 2,
+    "dayIndex": 4,
+    "keywords": "a natureza, os nomes e os atributos de deus páginas 46 a 48 nomes: adonai, el, elohim, kyrios, pantokrator. atributos incomunicáveis (asseidade, imutabilidade, infinidade, unidade) e comunicáveis (amor, justiça, santidade). ex 3.14; 1tm 1.17; ml 3.6; sl 90.2"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 2 • Dia 5",
+    "title": "A Triunidade de Deus e os Decretos Divinos",
+    "pages": "Páginas 48 a 53",
+    "textPreview": "\n 1. A Doutrina da Santíssima Trindade\n Definição: Deus subsiste eternamente como três pessoas distintas — Pai, Filho e Espírito Santo — sendo cada pessoa plenamente e co-igualmente Deus, e existindo um só Deus verdadeiro.\n Origem do Termo: Formulado teologicamente por Tertuliano no início do século II...",
+    "actionType": "openDay",
+    "weekIndex": 2,
+    "dayIndex": 5,
+    "keywords": "a triunidade de deus e os decretos divinos páginas 48 a 53 um deus em três pessoas co-iguais (tertuliano). igualdade ontológica de ser e subordinação econômica de papéis. decretos visam a glória de deus. mt 28.19; 2co 13.13; ef 1.11; sl 33.11"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 2 • Dia 6",
+    "title": "Criação Material, Mundo Espiritual e Quiz Semanal 2",
+    "pages": "Páginas 53 a 56",
+    "textPreview": "\n 1. A Doutrina da Criação Material\n Criação Ex Nihilo: Deus trouxe o universo à existência do nada, sem usar matéria preexistente, por Sua pura palavra e vontade soberana, para manifestação de Sua glória.\n Teorias Divergentes Rejeitadas:\n   Dualismo: Matéria eterna coexistindo com Deus.\n   Emanação:...",
+    "actionType": "openDay",
+    "weekIndex": 2,
+    "dayIndex": 6,
+    "keywords": "criação material, mundo espiritual e quiz semanal 2 páginas 53 a 56 criação ex nihilo (do nada) para a glória de deus. anjos são seres espirituais criados; satanás e demônios são anjos rebeldes. providência sustenta o cosmos. gn 1.1; cl 1.16; sl 104.24; ne 9.6"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 3 • Dia 1",
+    "title": "Antropologia: Origem, Natureza e Imagem de Deus",
+    "pages": "Páginas 56 a 60",
+    "textPreview": "\n 1. A Origem e o Propósito do Homem\n Criação Especial: O homem não descende de processos cegos evolutivos; foi criado diretamente por Deus: corpo modelado do pó da terra e dimensão imaterial soprada pelo fôlego divino (Gn 2.7).\n Propósito Supremo: Conhecer a Deus, amá-Lo e glorificá-Lo em tudo (Is 43.7).\n...",
+    "actionType": "openDay",
+    "weekIndex": 3,
+    "dayIndex": 1,
+    "keywords": "antropologia: origem, natureza e imagem de deus páginas 56 a 60 criado do pó e sopro divino para glorificar a deus. possui imago dei nos aspectos moral, espiritual, mental e relacional. dicotomia vs. tricotomia. gn 1.26-27; gn 2.7; is 43.7; ec 12.7"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 3 • Dia 2",
+    "title": "Hamartiologia: A Queda, Imputação e Depravação Total",
+    "pages": "Páginas 60 a 64",
+    "textPreview": "\n 1. Definição Bíblica de Pecado\nConforme o Catecismo Maior, pecado é qualquer falta de conformidade com, ou transgressão de qualquer lei de Deus dada como regra à criatura moral (seja por pensamento, palavra, omissão, ato ou disposição interna). O pecado gera culpa (violação da justiça) e poluição/corrupção...",
+    "actionType": "openDay",
+    "weekIndex": 3,
+    "dayIndex": 2,
+    "keywords": "hamartiologia: a queda, imputação e depravação total páginas 60 a 64 pecado é transgressão da lei divina gerando culpa e corrupção. a depravação total contamina todo o ser. o castigo culmina na morte espiritual, física e eterna. rm 5.12; rm 3.23; rm 6.23; ef 2.1-3"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 3 • Dia 3",
+    "title": "Cristologia: A Pessoa de Cristo e Heresias Históricas",
+    "pages": "Páginas 64 a 68",
+    "textPreview": "\n 1. A União Hipostática\nA doutrina ortodoxa bíblica ensina que Nosso Senhor Jesus Cristo é uma só Pessoa indivisível, na qual subsistem perfeitamente duas naturezas: verdadeiro Deus e verdadeiro homem, sem confusão, sem mudança, sem divisão e sem separação.\n\n 2. Necessidade da Dupla Natureza\n Por que prec...",
+    "actionType": "openDay",
+    "weekIndex": 3,
+    "dayIndex": 3,
+    "keywords": "cristologia: a pessoa de cristo e heresias históricas páginas 64 a 68 jesus: 1 pessoa e 2 naturezas (deus e homem). refutação de heresias: ebionismo e arianismo (contra divindade); docetismo e apolinarismo (contra humanidade); nestorianismo e eutiquianismo (contra a união). jo 1.1,14; cl 2.9; 1tm 2.5; hb 4.15"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 3 • Dia 4",
+    "title": "Os Estados de Cristo: Humilhação e Exaltação",
+    "pages": "Páginas 68 a 71",
+    "textPreview": "\n 1. O Estado de Humilhação de Cristo\n No que consiste: Na renúncia voluntária da glória celestial visível e a entrada na condição caída deste mundo.\n Etapas:\n  1. Encarnação e Nascimento Humilde: Gerado pelo Espírito e nascido da virgem Maria.\n  2. Kénosis (Esvaziamento): Esvaziou-se não de Sua divind...",
+    "actionType": "openDay",
+    "weekIndex": 3,
+    "dayIndex": 4,
+    "keywords": "os estados de cristo: humilhação e exaltação páginas 68 a 71 humilhação: encarnação, esvaziamento (kénosis), obediência à lei, sofrimento, morte na cruz e sepultamento. exaltação: ressurreição, ascensão, assento à destra e segunda vinda gloriosa. fp 2.5-11; at 2.23-24; hb 1.3; 1co 15.3-4"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 3 • Dia 5",
+    "title": "Os Ofícios de Cristo e a Doutrina da Expiação",
+    "pages": "Páginas 71 a 75",
+    "textPreview": "\n 1. Os Três Ofícios de Cristo (Munus Triplex)\n1. Profeta: Revela perfeitamente o Pai e a verdade celestial aos homens (Dt 18.15; Jo 1.18). Ele não é mero portador de mensagens, mas a própria Fonte da revelação.\n2. Sacerdote: Reconcilia o pecador com Deus por meio de Sua expiação vicária na cruz e intercede ...",
+    "actionType": "openDay",
+    "weekIndex": 3,
+    "dayIndex": 5,
+    "keywords": "os ofícios de cristo e a doutrina da expiação páginas 71 a 75 profeta (revela a verdade), sacerdote (sacrifício e intercessão) e rei (governo soberano). expiação é vicária, propiciatória e substitutiva. is 53.5-6; hb 7.25; 2co 5.21; rm 3.24-25"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 3 • Dia 6",
+    "title": "Revisão Geral e Quiz Semanal 3",
+    "pages": "Páginas 56 a 74",
+    "textPreview": "\n Revisão Crítica da Semana 3:\n1. O Homem: Criação digna e coroada com a Imago Dei; distinção entre alma e espírito (dicotomia vs. tricotomia).\n2. A Queda: Pecado como transgressão da lei divina com consequências mortais físicas, espirituais e eternas.\n3. Cristo Homem e Deus: A união de duas naturezas pe...",
+    "actionType": "openDay",
+    "weekIndex": 3,
+    "dayIndex": 6,
+    "keywords": "revisão geral e quiz semanal 3 páginas 56 a 74 homem criado à imagem de deus; queda em adão trouxe depravação total; cristo encarnou (verdadeiro deus e homem), morreu como substituto vicário e ressuscitou em triunfo. gn 1.27; rm 5.12; jo 1.14; 2co 5.21"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 4 • Dia 1",
+    "title": "Pneumatologia: Divindade, Pessoa e Obra do Espírito Santo",
+    "pages": "Páginas 75 a 78",
+    "textPreview": "\n 1. A Plena Divindade do Espírito Santo\nO Espírito Santo é a terceira pessoa da Trindade, co-eterna e consubstancial com o Pai e o Filho:\n Recebe Nomes Divinos: Chamado expressamente de Deus (At 5.3-4; 1Co 3.16).\n Possui Perfeições Divinas: Onipresença (Sl 139.7-10), onisciência (1Co 2.10-11), onipotência...",
+    "actionType": "openDay",
+    "weekIndex": 4,
+    "dayIndex": 1,
+    "keywords": "pneumatologia: divindade, pessoa e obra do espírito santo páginas 75 a 78 o espírito santo é deus pleno e pessoa divina (possui intelecto, vontade e afeto). no at atuava temporariamente; no nt habita permanentemente no crente regenerado. at 5.3-4; jo 14.16-17; ef 4.30; 1co 12.11"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 4 • Dia 2",
+    "title": "Soteriologia: Graça Comum, Eleição e a Conversão",
+    "pages": "Páginas 78 a 84",
+    "textPreview": "\n 1. Graça Comum versus Graça Especial\n Graça Comum: Ações providenciais pelas quais Deus concede bênçãos gerais (chuva, sol, inteligência, ordem civil, cultura) a crentes e ímpios indiscriminadamente, refreando o mal. Não salva ninguém nem regenera a natureza decaída.\n Graça Especial/Eficaz: A interve...",
+    "actionType": "openDay",
+    "weekIndex": 4,
+    "dayIndex": 2,
+    "keywords": "soteriologia: graça comum, eleição e a conversão páginas 78 a 84 graça comum preserva o cosmos; graça especial salva. conversão une arrependimento (mudança de mente, afeto e propósito) e fé (conhecimento, assentimento e confiança). ef 2.8-9; jo 3.3; mt 5.45; at 20.21"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 4 • Dia 3",
+    "title": "Soteriologia: Justificação, Santificação e Perseverança",
+    "pages": "Páginas 84 a 87",
+    "textPreview": "\n 1. A Justificação Forense\n Definição: Ato legal e instantâneo de Deus pelo qual Ele perdoa todos os pecados do homem e o declara justo diante de Seu tribunal, imputando-lhe a justiça de Cristo.\n Dimensões:\n   Elemento Negativo: Cancelamento da culpa e remoção de toda a penalidade da condenação.\n  ...",
+    "actionType": "openDay",
+    "weekIndex": 4,
+    "dayIndex": 3,
+    "keywords": "soteriologia: justificação, santificação e perseverança páginas 84 a 87 justificação é ato forense instantâneo (declaração de justiça). santificação é processo contínuo e cooperativo. os verdadeiros santos perseveram eternamente. rm 5.1; 2co 5.21; jo 10.28-29; rm 8.38-39"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 4 • Dia 4",
+    "title": "Escatologia, Destinos Eternos e Ética Cristã",
+    "pages": "Páginas 92 a 95",
+    "textPreview": "\n 1. Escatologia Individual e o Estado Intermediário\n O que acontece após a morte física?\n   Concepção Ortodoxa Bíblica: Entre a morte física e a ressurreição corporal futura, o espírito humano entra em um estado intermediário de consciência plena: os justos desfrutam imediatamente da presença e consolo de D...",
+    "actionType": "openDay",
+    "weekIndex": 4,
+    "dayIndex": 4,
+    "keywords": "escatologia, destinos eternos e ética cristã páginas 92 a 95 estado intermediário consciente (sem sono ou purgatório). segunda vinda visível e física. três visões milenares (pré, pós e amilenismo). céu e inferno eternos. at 1.11; hb 9.27; mt 25.46; ap 20-22"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 4 • Dia 5",
+    "title": "Revisão Geral e Preparação para o Grande Simulado",
+    "pages": "Páginas 5 a 95",
+    "textPreview": "\n Instruções para o Grande Simulado de 60 Questões Abertas:\n1. Este simulado cobre 100% dos 4 blocos e 95 páginas da sua apostila.\n2. Cada questão foi elaborada espelhando o rigor e o vocabulário de concílios doutrinários e provas examinadoras.\n3. Não há limite de tempo travando você: você tem total liberdad...",
+    "actionType": "openDay",
+    "weekIndex": 4,
+    "dayIndex": 5,
+    "keywords": "revisão geral e preparação para o grande simulado páginas 5 a 95 manejar bem a palavra da verdade. o simulado de 60 questões abertas testa a amplitude total dos 4 módulos doutrinários. 2tm 2.15; 1pe 3.15"
+  },
+  {
+    "type": "Plano de Estudo Diário",
+    "badge": "Semana 4 • Dia 6",
+    "title": "Simulado Geral Aberto (Início das 60 Questões) e Quiz Semanal 4",
+    "pages": "Páginas 75 a 95",
+    "textPreview": "\n Início do Simulado Final!\nAcesse a aba Simulado Final (60 Questões) para responder às questões discursivas oficiais. Você pode navegar livremente entre as perguntas, revisar e salvar quantas vezes quiser.\n...",
+    "actionType": "openDay",
+    "weekIndex": 4,
+    "dayIndex": 6,
+    "keywords": "simulado geral aberto (início das 60 questões) e quiz semanal 4 páginas 75 a 95 60 questões discursivas abrangentes. responda no seu ritmo em até 3 dias com salvamento automático. 2tm 4.7-8; ap 22.20"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 1 • Família e Casamento",
+    "title": "Conforme a apostila, defina o casamento bíblico e aponte as duas únicas exceções em que o divórcio é admitido nas Escrituras.",
+    "pages": "Páginas 5-6, 29",
+    "textPreview": "Resposta oficial: O casamento é uma instituição divina monogâmica e vitalícia. Deus não aprova o divórcio em Sua perfeita vontade, mas o concede apenas em duas circunstâncias: 1) por infidelidade conjugal (adultério, Mt 5.31-32); e 2) por impossibilidade de reconciliação decorrente de abandono vol...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 1,
+    "keywords": "família e casamento conforme a apostila, defina o casamento bíblico e aponte as duas únicas exceções em que o divórcio é admitido nas escrituras. o casamento é uma instituição divina monogâmica e vitalícia. deus não aprova o divórcio em sua perfeita vontade, mas o concede apenas em duas circunstâncias: 1) por infidelidade conjugal (adultério, mt 5.31-32); e 2) por impossibilidade de reconciliação decorrente de abandono voluntário do cônjuge descrente em casamento misto (1co 7.15). instituicao divina monogamico infidelidade adulterio abandono descrente 1co 7.15 mt 5.31-32 páginas 5-6, 29"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 2 • Ordenanças da Igreja",
+    "title": "Por que para os Batistas o Batismo e a Ceia do Senhor são classificados como 'ordenanças' e não como 'sacramentos'?",
+    "pages": "Páginas 7-8, 23-24, 90-91",
+    "textPreview": "Resposta oficial: Porque são cerimônias simbólicas e memoriais ordenadas por Cristo que proclamam verdades espirituais já ocorridas, e não sacramentos que transmitem ou conferem graça salvífica automática ao participante. O crente não recebe graça especial ou salvação pelo simples ato de participa...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 2,
+    "keywords": "ordenanças da igreja por que para os batistas o batismo e a ceia do senhor são classificados como 'ordenanças' e não como 'sacramentos'? porque são cerimônias simbólicas e memoriais ordenadas por cristo que proclamam verdades espirituais já ocorridas, e não sacramentos que transmitem ou conferem graça salvífica automática ao participante. o crente não recebe graça especial ou salvação pelo simples ato de participar desses ritos. ordenancas sacramentos simbolico memorial nao conferem graca proclamam páginas 7-8, 23-24, 90-91"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 3 • Eficácia do Batismo",
+    "title": "Com base na teologia bíblica batista, por que o batismo em água não tem poder salvífico? Cite dois exemplos bíblicos presentes na apostila.",
+    "pages": "Páginas 7, 23",
+    "textPreview": "Resposta oficial: O batismo não salva porque a regeneração opera-se unicamente pela fé em Cristo operada pelo Espírito Santo. O batismo em água é apenas o testemunho público do sepultamento do velho homem e renascimento com Cristo. Dois exemplos bíblicos de pessoas salvas sem passar pelo batismo e...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 3,
+    "keywords": "eficácia do batismo com base na teologia bíblica batista, por que o batismo em água não tem poder salvífico? cite dois exemplos bíblicos presentes na apostila. o batismo não salva porque a regeneração opera-se unicamente pela fé em cristo operada pelo espírito santo. o batismo em água é apenas o testemunho público do sepultamento do velho homem e renascimento com cristo. dois exemplos bíblicos de pessoas salvas sem passar pelo batismo em água são zaqueu e o ladrão da cruz. nao salva testemunho publico regeneracao pela fe zaqueu ladrao da cruz páginas 7, 23"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 4 • Ceia do Senhor: Correntes Teológicas",
+    "title": "Quais são as quatro principais posições históricas sobre a presença de Cristo na Ceia do Senhor e qual delas é a posição adotada pelos Batistas?",
+    "pages": "Páginas 7, 91-92",
+    "textPreview": "Resposta oficial: 1) Transubstanciação (Católica: pão e vinho viram corpo e sangue literais); 2) Consubstanciação (Luterana: corpo de Cristo física e espiritualmente em, com e sob o pão); 3) Presença Mística (Reformada/Calvinista: presença espiritual experimentada pela fé); e 4) Símbolo/Memorial (...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 4,
+    "keywords": "ceia do senhor: correntes teológicas quais são as quatro principais posições históricas sobre a presença de cristo na ceia do senhor e qual delas é a posição adotada pelos batistas? 1) transubstanciação (católica: pão e vinho viram corpo e sangue literais); 2) consubstanciação (luterana: corpo de cristo física e espiritualmente em, com e sob o pão); 3) presença mística (reformada/calvinista: presença espiritual experimentada pela fé); e 4) símbolo/memorial (batista: os elementos são puramente representações memoriais do sacrifício de cristo). transubstanciacao consubstanciacao presenca mistica simbolo memorial batista páginas 7, 91-92"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 5 • Modalidades da Ceia",
+    "title": "Diferencie Ceia Livre, Ceia Restrita e Ceia Ultrarrestrita no contexto eclesiológico evangélico.",
+    "pages": "Página 92",
+    "textPreview": "Resposta oficial: Ceia Livre é aberta a membros de qualquer denominação cristã evangélica; Ceia Restrita permite a participação apenas de membros batizados da mesma denominação e ordem (batistas); e Ceia Ultrarrestrita restringe a participação unicamente aos membros oficiais daquela igreja local e...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 5,
+    "keywords": "modalidades da ceia diferencie ceia livre, ceia restrita e ceia ultrarrestrita no contexto eclesiológico evangélico. ceia livre é aberta a membros de qualquer denominação cristã evangélica; ceia restrita permite a participação apenas de membros batizados da mesma denominação e ordem (batistas); e ceia ultrarrestrita restringe a participação unicamente aos membros oficiais daquela igreja local específica. ceia livre qualquer igreja ceia restrita mesma denominacao ceia ultrarrestrita propria igreja local página 92"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 6 • Autonomia da Igreja Local",
+    "title": "O que significa dizer que uma Igreja Batista possui autonomia e governo congregacional democrático?",
+    "pages": "Páginas 8, 22-23, 89",
+    "textPreview": "Resposta oficial: Significa que a igreja local é livre e soberana para julgar seus próprios atos perante a Palavra de Deus sob a liderança exclusiva de Jesus Cristo (Seu único Cabeça), não estando subordinada a bispos, sínodos ou hierarquias externas. As decisões eclesiásticas e administrativas sã...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 6,
+    "keywords": "autonomia da igreja local o que significa dizer que uma igreja batista possui autonomia e governo congregacional democrático? significa que a igreja local é livre e soberana para julgar seus próprios atos perante a palavra de deus sob a liderança exclusiva de jesus cristo (seu único cabeça), não estando subordinada a bispos, sínodos ou hierarquias externas. as decisões eclesiásticas e administrativas são deliberadas democraticamente pela assembleia dos membros. autonomia congregacional democratico assembleia cristo cabeca sem hierarquia externa páginas 8, 22-23, 89"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 7 • Oficiais da Igreja",
+    "title": "Quais são os oficiais bíblicos reconhecidos pelo Novo Testamento na eclesiologia batista e qual a forma de governo adotada?",
+    "pages": "Páginas 8, 23, 25, 89",
+    "textPreview": "Resposta oficial: O Novo Testamento reconhece duas ordens de oficiais: pastores (também referidos como bispos ou presbíteros) e diáconos. A forma de governo adotada pelas igrejas batistas é o governo Congregacional (diferindo do episcopal e do presbiteriano)....",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 7,
+    "keywords": "oficiais da igreja quais são os oficiais bíblicos reconhecidos pelo novo testamento na eclesiologia batista e qual a forma de governo adotada? o novo testamento reconhece duas ordens de oficiais: pastores (também referidos como bispos ou presbíteros) e diáconos. a forma de governo adotada pelas igrejas batistas é o governo congregacional (diferindo do episcopal e do presbiteriano). pastores bispos presbiteros diaconos governo congregacional páginas 8, 23, 25, 89"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 8 • Disciplina Eclesiástica",
+    "title": "Quais são os três tipos de disciplinas aplicadas na igreja local e qual a finalidade de cada uma?",
+    "pages": "Página 90",
+    "textPreview": "Resposta oficial: 1) Disciplina Formativa: instrução, doutrinação e ensino contínuo aos crentes; 2) Disciplina Corretiva: admoestação, repreensão amorosa e suspensão provisória de privilégios para levar ao arrependimento; e 3) Disciplina Cirúrgica: exclusão/desligamento do membro obstinado que rej...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 8,
+    "keywords": "disciplina eclesiástica quais são os três tipos de disciplinas aplicadas na igreja local e qual a finalidade de cada uma? 1) disciplina formativa: instrução, doutrinação e ensino contínuo aos crentes; 2) disciplina corretiva: admoestação, repreensão amorosa e suspensão provisória de privilégios para levar ao arrependimento; e 3) disciplina cirúrgica: exclusão/desligamento do membro obstinado que rejeita o arrependimento bíblico. disciplina formativa ensino disciplina corretiva repreensao disciplina cirurgica exclusao página 90"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 9 • Ministério Diaconal",
+    "title": "Qual o propósito essencial do diaconato estabelecido em Atos 6 e 1 Timóteo 3 e quais as suas funções primordiais na congregação?",
+    "pages": "Páginas 9-10",
+    "textPreview": "Resposta oficial: O propósito essencial do diácono é SERVIR. Suas funções primordiais são amparar o pastor nos cuidados práticos e sociais da igreja: auxílio nas finanças, assistência aos necessitados e viúvas, visitações a enfermos e novos convertidos, ministério de oração e suporte na disciplina...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 9,
+    "keywords": "ministério diaconal qual o propósito essencial do diaconato estabelecido em atos 6 e 1 timóteo 3 e quais as suas funções primordiais na congregação? o propósito essencial do diácono é servir. suas funções primordiais são amparar o pastor nos cuidados práticos e sociais da igreja: auxílio nas finanças, assistência aos necessitados e viúvas, visitações a enfermos e novos convertidos, ministério de oração e suporte na disciplina da igreja, liberando os pastores para a pregação e ensino. servir atos 6 1 timoteo 3 assistencia social financas visitacao suporte pastoral páginas 9-10"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 10 • Ministério da Visitação",
+    "title": "Por que a visitação cristã é considerada um dos ministérios mais vitais para o crescimento e a comunhão da igreja?",
+    "pages": "Páginas 10-11",
+    "textPreview": "Resposta oficial: Porque a igreja é um corpo vivo e não paredes de tijolos; a visitação reproduz o modelo de amor, hospitalidade e cuidado da igreja primitiva, consolando o necessitado e renovando a esperança da glória nos lares, sendo um poderoso canal de acolhimento e evangelização pessoal....",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 10,
+    "keywords": "ministério da visitação por que a visitação cristã é considerada um dos ministérios mais vitais para o crescimento e a comunhão da igreja? porque a igreja é um corpo vivo e não paredes de tijolos; a visitação reproduz o modelo de amor, hospitalidade e cuidado da igreja primitiva, consolando o necessitado e renovando a esperança da glória nos lares, sendo um poderoso canal de acolhimento e evangelização pessoal. corpo vivo comunhao igreja primitiva cuidado fraternal hospitalidade crescimento páginas 10-11"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 11 • Doutrina de Missões",
+    "title": "Segundo a apostila, por que a obra de Missões é considerada a missão primordial da Igreja de Cristo e quem foi o primeiro missionário?",
+    "pages": "Páginas 11, 26",
+    "textPreview": "Resposta oficial: Missões é a missão principal da igreja porque nasceu do próprio amor redentor de Deus pelos homens, cumprindo a Grande Comissão de Jesus (Mc 16.15). Uma igreja que não evangeliza atrofia espiritualmente. O primeiro missionário foi o próprio Deus Pai, que enviou Seu Filho Jesus Cr...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 11,
+    "keywords": "doutrina de missões segundo a apostila, por que a obra de missões é considerada a missão primordial da igreja de cristo e quem foi o primeiro missionário? missões é a missão principal da igreja porque nasceu do próprio amor redentor de deus pelos homens, cumprindo a grande comissão de jesus (mc 16.15). uma igreja que não evangeliza atrofia espiritualmente. o primeiro missionário foi o próprio deus pai, que enviou seu filho jesus cristo ao mundo para a salvação da humanidade. missao principal evangelizar igreja atrofia primeiro missionario foi deus mc 16.15 páginas 11, 26"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 12 • Mordomia e Dízimo",
+    "title": "Qual o fundamento teológico do Dízimo e por que a retenção dele é considerada uma falta grave perante Deus?",
+    "pages": "Páginas 11-12, 26",
+    "textPreview": "Resposta oficial: O fundamento teológico é o reconhecimento de que Deus é o Criador, Senhor e dono soberano de todas as coisas (Mordomia bíblica); o dízimo expressa gratidão alegre e sistemática do crente para o sustento da igreja e avanço do Reino. Sua retenção nega a Deus o que Lhe pertence por ...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 12,
+    "keywords": "mordomia e dízimo qual o fundamento teológico do dízimo e por que a retenção dele é considerada uma falta grave perante deus? o fundamento teológico é o reconhecimento de que deus é o criador, senhor e dono soberano de todas as coisas (mordomia bíblica); o dízimo expressa gratidão alegre e sistemática do crente para o sustento da igreja e avanço do reino. sua retenção nega a deus o que lhe pertence por direito e atrai a advertência profética de malaquias 3.8-10. mordomia deus dono de tudo gratidao sustento do reino decima parte malaquias 3.8-10 páginas 11-12, 26"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 13 • O Plano Cooperativo",
+    "title": "O que é o Plano Cooperativo e qual foi a sua relevância histórica para a Convenção Batista Brasileira?",
+    "pages": "Páginas 12, 14",
+    "textPreview": "Resposta oficial: O Plano Cooperativo é o mecanismo voluntário em que as igrejas batistas locais cooperam financeiramente com porcentagens regulares para projetos conjuntos de âmbito nacional e mundial: sustento de juntas missionárias, seminários teológicos e obras de ação social. Historicamente, ...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 13,
+    "keywords": "o plano cooperativo o que é o plano cooperativo e qual foi a sua relevância histórica para a convenção batista brasileira? o plano cooperativo é o mecanismo voluntário em que as igrejas batistas locais cooperam financeiramente com porcentagens regulares para projetos conjuntos de âmbito nacional e mundial: sustento de juntas missionárias, seminários teológicos e obras de ação social. historicamente, foi o principal responsável pelo grande avanço missionário e expansão dos batistas no brasil. plano cooperativo cooperacao voluntaria juntas missionarias seminarios acao social crescimento dos batistas páginas 12, 14"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 14 • Princípios Históricos Batistas",
+    "title": "Cite os seis princípios históricos que notabilizaram os discípulos batistas através dos tempos, conforme a introdução da Declaração da CBB.",
+    "pages": "Páginas 13-14",
+    "textPreview": "Resposta oficial: 1) Aceitação das Escrituras como única regra de fé e conduta; 2) Conceito de igreja local democrática e autônoma, formada de pessoas regeneradas e biblicamente batizadas; 3) Separação entre Igreja e Estado; 4) Absoluta liberdade de consciência; 5) Responsabilidade individual dian...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 14,
+    "keywords": "princípios históricos batistas cite os seis princípios históricos que notabilizaram os discípulos batistas através dos tempos, conforme a introdução da declaração da cbb. 1) aceitação das escrituras como única regra de fé e conduta; 2) conceito de igreja local democrática e autônoma, formada de pessoas regeneradas e biblicamente batizadas; 3) separação entre igreja e estado; 4) absoluta liberdade de consciência; 5) responsabilidade individual diante de deus (sacerdócio dos crentes); e 6) autenticidade e apostolicidade das igrejas. escrituras unica regra igreja regenerada separacao igreja estado liberdade de consciencia responsabilidade individual apostolicidade páginas 13-14"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 15 • Identidade Batista (10 Razões)",
+    "title": "Explique o que as 'Dez razões porque sou crente Batista' afirmam sobre cultos, autoridade e relacionamento com Deus.",
+    "pages": "Páginas 31-33",
+    "textPreview": "Resposta oficial: Afirmam que: 1) Cultuamos a Deus com decência, ordem, simplicidade e alegria, sem quaisquer rituais esotéricos ou secretos; 2) Nossa autoridade de fé repousa num só livro divino: a Bíblia Sagrada; e 3) Desfrutamos de relacionamento direto com Deus por meio de Cristo, sem necessid...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 15,
+    "keywords": "identidade batista (10 razões) explique o que as 'dez razões porque sou crente batista' afirmam sobre cultos, autoridade e relacionamento com deus. afirmam que: 1) cultuamos a deus com decência, ordem, simplicidade e alegria, sem quaisquer rituais esotéricos ou secretos; 2) nossa autoridade de fé repousa num só livro divino: a bíblia sagrada; e 3) desfrutamos de relacionamento direto com deus por meio de cristo, sem necessidade de sacerdotes, santos ou intermediários humanos. culto com ordem sem rituais secretos biblia autoridade unica relacionamento direto sem intermediarios cristo unico salvador páginas 31-33"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 16 • Conceito de Teologia",
+    "title": "O que é Teologia, o que é Doutrina e quais são as quatro características essenciais da teologia apresentadas na apostila?",
+    "pages": "Página 34",
+    "textPreview": "Resposta oficial: Teologia é o conhecimento sistematizado de Deus e de suas relações com o universo. Doutrina é o que as Escrituras Sagradas como um todo ensinam acerca de um tópico específico. As quatro características da teologia são: bíblica, sistemática, contemporânea (no contexto cultural hum...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 16,
+    "keywords": "conceito de teologia o que é teologia, o que é doutrina e quais são as quatro características essenciais da teologia apresentadas na apostila? teologia é o conhecimento sistematizado de deus e de suas relações com o universo. doutrina é o que as escrituras sagradas como um todo ensinam acerca de um tópico específico. as quatro características da teologia são: bíblica, sistemática, contemporânea (no contexto cultural humano) e prática. conhecimento sistematizado doutrina ensino das escrituras biblica sistematica contemporanea pratica página 34"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 17 • Divisões da Teologia",
+    "title": "Quais são as cinco divisões clássicas da teologia e qual o foco específico da Teologia Bíblica em relação à Sistemática?",
+    "pages": "Páginas 34-35",
+    "textPreview": "Resposta oficial: As cinco divisões são: Teologia Bíblica, Sistemática, Dogmática, Histórica e Prática. A Teologia Bíblica enfoca o entendimento que os autores bíblicos e seus primeiros ouvintes tinham das doutrinas ao longo da história da revelação; a Sistemática compila e sintetiza todas as pass...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 17,
+    "keywords": "divisões da teologia quais são as cinco divisões clássicas da teologia e qual o foco específico da teologia bíblica em relação à sistemática? as cinco divisões são: teologia bíblica, sistemática, dogmática, histórica e prática. a teologia bíblica enfoca o entendimento que os autores bíblicos e seus primeiros ouvintes tinham das doutrinas ao longo da história da revelação; a sistemática compila e sintetiza todas as passagens da bíblia sobre um tema a partir dos dados da teologia bíblica. teologia biblica sistematica dogmatica historica pratica autores originais sintese tematica páginas 34-35"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 18 • Imanência e Transcendência",
+    "title": "Defina Teísmo Cristão e distinga a Imanência da Transcendência divina.",
+    "pages": "Páginas 35-36",
+    "textPreview": "Resposta oficial: Teísmo Cristão é a crença em um Deus pessoal, transcendente e imanente, que subsiste em três pessoas (Pai, Filho e Espírito Santo). Imanência é a presença e atuação constante de Deus no interior do cosmos e da história humana. Transcendência significa que Deus não se confunde com...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 18,
+    "keywords": "imanência e transcendência defina teísmo cristão e distinga a imanência da transcendência divina. teísmo cristão é a crença em um deus pessoal, transcendente e imanente, que subsiste em três pessoas (pai, filho e espírito santo). imanência é a presença e atuação constante de deus no interior do cosmos e da história humana. transcendência significa que deus não se confunde com a natureza criada; sua essência, santidade, saber e glória excedem infinitamente toda criatura. teismo cristao deus pessoal trindade imanencia presente e ativo transcendencia acima e infinito páginas 35-36"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 19 • Revelação de Deus",
+    "title": "O que é revelação divina e por que ela é absolutamente necessária para o ser humano?",
+    "pages": "Página 36",
+    "textPreview": "Resposta oficial: Revelação é o ato soberano de Deus pelo qual Ele se manifesta e comunica verdades de Si mesmo ao homem, as quais este jamais poderia alcançar por seus próprios esforços intelectuais. É necessária porque o homem é finito e pecador, e Deus é infinito; sem que Deus tome a iniciativa...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 19,
+    "keywords": "revelação de deus o que é revelação divina e por que ela é absolutamente necessária para o ser humano? revelação é o ato soberano de deus pelo qual ele se manifesta e comunica verdades de si mesmo ao homem, as quais este jamais poderia alcançar por seus próprios esforços intelectuais. é necessária porque o homem é finito e pecador, e deus é infinito; sem que deus tome a iniciativa graciosa de se revelar, nenhum conhecimento salvífico seria possível. ato de deus comunica verdade homem finito deus infinito incapaz por si mesmo página 36"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 20 • Revelação Geral e seus Canais",
+    "title": "Em que consiste a Revelação Geral e quais são os três meios através dos quais ela opera?",
+    "pages": "Página 37",
+    "textPreview": "Resposta oficial: A Revelação Geral é a comunicação de Deus acessível a toda a humanidade mediante a Sua obra criadora e providencial, sem ser uma revelação verbal proposicional redentora. Seus três meios são: 1) A natureza/criação; 2) A consciência humana moral; e 3) O governo providencial de Deu...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 20,
+    "keywords": "revelação geral e seus canais em que consiste a revelação geral e quais são os três meios através dos quais ela opera? a revelação geral é a comunicação de deus acessível a toda a humanidade mediante a sua obra criadora e providencial, sem ser uma revelação verbal proposicional redentora. seus três meios são: 1) a natureza/criação; 2) a consciência humana moral; e 3) o governo providencial de deus na história. revelacao geral natureza consciencia humana governo providencial obras de deus página 37"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 21 • Teologia Natural",
+    "title": "Quais são os cinco argumentos formulados na Teologia Natural para provar a existência de Deus e para que serve a revelação geral aos incrédulos?",
+    "pages": "Páginas 37-39",
+    "textPreview": "Resposta oficial: Os cinco argumentos são: 1) Cosmológico (causa adequada do universo); 2) Ontológico (ideia do Ser perfeito exige Sua existência); 3) Teleológico/Teológico (ordem e desígnio cósmico); 4) Moral (fonte suprema do bem e da justiça); e 5) Histórico (senso religioso universal de todos ...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 21,
+    "keywords": "teologia natural quais são os cinco argumentos formulados na teologia natural para provar a existência de deus e para que serve a revelação geral aos incrédulos? os cinco argumentos são: 1) cosmológico (causa adequada do universo); 2) ontológico (ideia do ser perfeito exige sua existência); 3) teleológico/teológico (ordem e desígnio cósmico); 4) moral (fonte suprema do bem e da justiça); e 5) histórico (senso religioso universal de todos os povos). a revelação geral serve aos incrédulos para deixá-los inescusáveis e indesculpavelmente culpados diante da lei moral, não para justificá-los. cosmologico ontologico teleologico moral historico para faze-los culpados sem desculpa páginas 37-39"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 22 • Revelação Especial",
+    "title": "O que é a Revelação Especial de Deus e quais são suas modalidades e características?",
+    "pages": "Páginas 39-40",
+    "textPreview": "Resposta oficial: É a autorrevelação salvadora e pessoal de Deus a pessoas específicas em tempos e locais definidos, encarnada na Bíblia e culminada em Cristo. Suas modalidades incluem: condescendência divina (teofanias, visões, sonhos, anjos, sortes), fala divina (interna ou audível), fatos histó...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 22,
+    "keywords": "revelação especial o que é a revelação especial de deus e quais são suas modalidades e características? é a autorrevelação salvadora e pessoal de deus a pessoas específicas em tempos e locais definidos, encarnada na bíblia e culminada em cristo. suas modalidades incluem: condescendência divina (teofanias, visões, sonhos, anjos, sortes), fala divina (interna ou audível), fatos históricos e a encarnação do verbo. suas características são: pessoal, proposicional (comunica verdades objetivas), analógica e antropomórfica. revelacao especial pessoal salvadora escrituras cristo proposicional antropomorfica páginas 39-40"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 23 • Inspiração das Escrituras",
+    "title": "Diferencie revelação, inspiração e iluminação, comprovando se pode haver revelação sem inspiração e inspiração sem revelação.",
+    "pages": "Páginas 41-43",
+    "textPreview": "Resposta oficial: Revelação é a comunicação da verdade divina inacessível à razão humana. Inspiração é a ação sobrenatural do Espírito Santo que guiou o registro escrito dessa verdade sem erro. Iluminação é a capacidade concedida pelo Espírito ao leitor para compreender a verdade revelada. Pode ha...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 23,
+    "keywords": "inspiração das escrituras diferencie revelação, inspiração e iluminação, comprovando se pode haver revelação sem inspiração e inspiração sem revelação. revelação é a comunicação da verdade divina inacessível à razão humana. inspiração é a ação sobrenatural do espírito santo que guiou o registro escrito dessa verdade sem erro. iluminação é a capacidade concedida pelo espírito ao leitor para compreender a verdade revelada. pode haver revelação sem inspiração (ex: vozes dos sete trovões em ap 10.3-4 que joão foi impedido de escrever) e inspiração sem revelação direta (ex: lucas investigando registros históricos em lc 1.1-4). revelacao comunicacao inspiracao registro iluminacao compreensao sete trovoes ap 10 lucas 1 páginas 41-43"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 24 • Teorias da Inspiração",
+    "title": "Apresente as cinco teorias que tentam explicar como ocorreu a inspiração da Bíblia e indique qual é a posição ortodoxa.",
+    "pages": "Página 42",
+    "textPreview": "Resposta oficial: 1) Teoria da Intuição (mero discernimento natural humano); 2) Teoria da Iluminação (influência do Espírito em grau idêntico ao de qualquer crente); 3) Teoria Dinâmica (Deus inspirou os conceitos gerais, mas as palavras ficaram a cargo do autor); 4) Teoria Verbal (o Espírito Santo...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 24,
+    "keywords": "teorias da inspiração apresente as cinco teorias que tentam explicar como ocorreu a inspiração da bíblia e indique qual é a posição ortodoxa. 1) teoria da intuição (mero discernimento natural humano); 2) teoria da iluminação (influência do espírito em grau idêntico ao de qualquer crente); 3) teoria dinâmica (deus inspirou os conceitos gerais, mas as palavras ficaram a cargo do autor); 4) teoria verbal (o espírito santo guiou a própria escolha dos termos sem suprimir a personalidade do autor); 5) teoria do ditado (o escritor foi uma pena inerte). a posição bíblica ortodoxa aceita pelos batistas é a teoria da inspiração verbal e plena. intuicao iluminacao dinamica verbal ditado inspiracao verbal e plena página 42"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 25 • Inerrância Bíblica",
+    "title": "O que é Inerrância Bíblica e quais os seus três conceitos (plena, absoluta e limitada)? Qual deles é refutado pelas Escrituras?",
+    "pages": "Páginas 44-45",
+    "textPreview": "Resposta oficial: Inerrância é a doutrina de que a Bíblia é plenamente fidedigna e sem erro em todos os seus ensinos originais. Conceitos: 1) Inerrância Plena (considera referências históricas e científicas fenomenais, ou seja, expressas como aparecem aos olhos humanos, sendo totalmente verídicas)...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 25,
+    "keywords": "inerrância bíblica o que é inerrância bíblica e quais os seus três conceitos (plena, absoluta e limitada)? qual deles é refutado pelas escrituras? inerrância é a doutrina de que a bíblia é plenamente fidedigna e sem erro em todos os seus ensinos originais. conceitos: 1) inerrância plena (considera referências históricas e científicas fenomenais, ou seja, expressas como aparecem aos olhos humanos, sendo totalmente verídicas); 2) inerrância absoluta (sustenta exatidão detalhada em todas as minúcias); e 3) inerrância limitada (alega falsamente erros em história e ciência). a inerrância limitada é categoricamente refutada pela bíblia (sl 119.96; 2tm 3.16). inerrancia plena inerrancia absoluta inerrancia limitada refutada sem mescla de erro páginas 44-45"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 26 • Nomes de Deus",
+    "title": "Quais são os principais nomes de Deus no Antigo Testamento e no Novo Testamento e seus significados?",
+    "pages": "Página 46",
+    "textPreview": "Resposta oficial: No Antigo Testamento: Elohim (o Deus forte, Criador e transcendente), El (Deus de poder/Senhor) e Adonai (Meu Senhor e Soberano Mestre). No Novo Testamento: Theos (Deus), Kyrios (Senhor supremo), Pater (Pai celestial) e Pantokrator/Theos Pantokrator (Deus Todo-Poderoso)....",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 26,
+    "keywords": "nomes de deus quais são os principais nomes de deus no antigo testamento e no novo testamento e seus significados? no antigo testamento: elohim (o deus forte, criador e transcendente), el (deus de poder/senhor) e adonai (meu senhor e soberano mestre). no novo testamento: theos (deus), kyrios (senhor supremo), pater (pai celestial) e pantokrator/theos pantokrator (deus todo-poderoso). elohim el adonai theos kyrios pater pantokrator página 46"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 27 • Atributos Divinos",
+    "title": "Como se definem os Atributos de Deus e como se diferenciam os atributos incomunicáveis dos atributos comunicáveis?",
+    "pages": "Páginas 47-48",
+    "textPreview": "Resposta oficial: Atributos são as perfeições essenciais que distinguem a natureza divina e fundamentam Suas obras na criação, providência e redenção. Incomunicáveis são aqueles que pertencem exclusivamente ao ser absoluto de Deus e não são partilhados com a criatura (Existência Autônoma, Imutabil...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 27,
+    "keywords": "atributos divinos como se definem os atributos de deus e como se diferenciam os atributos incomunicáveis dos atributos comunicáveis? atributos são as perfeições essenciais que distinguem a natureza divina e fundamentam suas obras na criação, providência e redenção. incomunicáveis são aqueles que pertencem exclusivamente ao ser absoluto de deus e não são partilhados com a criatura (existência autônoma, imutabilidade, infinidade, unidade). comunicáveis são aqueles partilhados por semelhança com suas criaturas (sabedoria, conhecimento, santidade, justiça, bondade, amor). incomunicaveis comunicaveis asseidade imutabilidade infinidade unidade santidade e amor páginas 47-48"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 28 • A Santíssima Trindade",
+    "title": "O que é a doutrina da Trindade, quem usou esse termo pela primeira vez e qual a diferença entre Trindade Ontológica e Trindade Econômica?",
+    "pages": "Páginas 48-49",
+    "textPreview": "Resposta oficial: A Trindade ensina que Deus existe eternamente como três pessoas distintas — Pai, Filho e Espírito Santo — sendo cada pessoa plenamente Deus e havendo um só Deus. O termo foi formulado primeiro por Tertuliano. A Trindade Ontológica refere-se à igualdade essencial no ser e divindad...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 28,
+    "keywords": "a santíssima trindade o que é a doutrina da trindade, quem usou esse termo pela primeira vez e qual a diferença entre trindade ontológica e trindade econômica? a trindade ensina que deus existe eternamente como três pessoas distintas — pai, filho e espírito santo — sendo cada pessoa plenamente deus e havendo um só deus. o termo foi formulado primeiro por tertuliano. a trindade ontológica refere-se à igualdade essencial no ser e divindade; a trindade econômica refere-se à distinção e subordinação voluntária de papéis e ofícios na realização da redenção humana. trindade tertuliano tres pessoas um so deus ontologica igualdade de ser economica subordinacao de papeis páginas 48-49"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 29 • Decretos de Deus",
+    "title": "Como o Breve Catecismo de Westminster define os Decretos de Deus e qual a sua finalidade suprema?",
+    "pages": "Páginas 50-51",
+    "textPreview": "Resposta oficial: Define decretos como o eterno propósito de Deus, segundo o mui sábio e santo conselho de Sua vontade, pelo qual, para Sua própria glória, Ele predestinou e estabeleceu tudo quanto acontece na história. Sua finalidade suprema e exclusiva é a glória de Deus (Ef 1.6, 11-12)....",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 29,
+    "keywords": "decretos de deus como o breve catecismo de westminster define os decretos de deus e qual a sua finalidade suprema? define decretos como o eterno propósito de deus, segundo o mui sábio e santo conselho de sua vontade, pelo qual, para sua própria glória, ele predestinou e estabeleceu tudo quanto acontece na história. sua finalidade suprema e exclusiva é a glória de deus (ef 1.6, 11-12). catecismo de westminster eterno proposito conselho de sua vontade predestinou tudo gloria de deus páginas 50-51"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 30 • Decretos: Calvinismo vs. Arminianismo",
+    "title": "Compare as visões Calvinista e Arminiana a respeito da relação entre os decretos divinos e as decisões do homem.",
+    "pages": "Páginas 52-53",
+    "textPreview": "Resposta oficial: A posição Calvinista afirma que o plano decretado por Deus é logicamente anterior e incondicional, sendo a resposta humana efeito desse propósito soberano. A posição Arminiana valoriza a liberdade humana, afirmando que a eleição de Deus é condicionada à presciência divina daquele...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 30,
+    "keywords": "decretos: calvinismo vs. arminianismo compare as visões calvinista e arminiana a respeito da relação entre os decretos divinos e as decisões do homem. a posição calvinista afirma que o plano decretado por deus é logicamente anterior e incondicional, sendo a resposta humana efeito desse propósito soberano. a posição arminiana valoriza a liberdade humana, afirmando que a eleição de deus é condicionada à presciência divina daqueles que exerceriam a fé ao ouvir o evangelho. calvinista incondicional anterior arminiana condicional presciencia divina liberdade humana páginas 52-53"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 31 • Doutrina da Criação",
+    "title": "O que é a criação material segundo as Escrituras e quais são as três teorias divergentes rejeitadas pela teologia bíblica?",
+    "pages": "Páginas 53-54",
+    "textPreview": "Resposta oficial: A criação é a obra soberana de Deus ao trazer à existência do nada (ex nihilo), sem matéria preexistente, tudo o que existe para manifestação de Sua glória. As três teorias divergentes rejeitadas são: o Dualismo (matéria eterna prévia), a Emanação (universo como substância irradi...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 31,
+    "keywords": "doutrina da criação o que é a criação material segundo as escrituras e quais são as três teorias divergentes rejeitadas pela teologia bíblica? a criação é a obra soberana de deus ao trazer à existência do nada (ex nihilo), sem matéria preexistente, tudo o que existe para manifestação de sua glória. as três teorias divergentes rejeitadas são: o dualismo (matéria eterna prévia), a emanação (universo como substância irradiada de deus) e o evolucionismo materialista cego. ex nihilo do nada sem materia preexistente dualismo emanacao evolucao páginas 53-54"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 32 • Mundo Espiritual e Angelologia",
+    "title": "O que são anjos e demônios, como os anjos se classificam nas Escrituras e quem é Satanás?",
+    "pages": "Páginas 54-55",
+    "textPreview": "Resposta oficial: Anjos são seres espirituais criados por Deus antes da humanidade, dotados de inteligência e juízo moral, mas desprovidos de corpo físico carnal. Classificam-se em anjos, querubins, serafins e arcanjos. Demônios são anjos rebeldes que pecaram e se opõem à obra de Deus; Satanás (o ...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 32,
+    "keywords": "mundo espiritual e angelologia o que são anjos e demônios, como os anjos se classificam nas escrituras e quem é satanás? anjos são seres espirituais criados por deus antes da humanidade, dotados de inteligência e juízo moral, mas desprovidos de corpo físico carnal. classificam-se em anjos, querubins, serafins e arcanjos. demônios são anjos rebeldes que pecaram e se opõem à obra de deus; satanás (o diabo ou antiga serpente) é o chefe dessas hostes caídas e autor originário do pecado. seres espirituais querubins serafins arcanjos demonios anjos que pecaram satanas diabo chefe páginas 54-55"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 33 • Providência Divina e Origem do Homem",
+    "title": "O que é Providência Divina e como a Bíblia relata a criação do corpo e da parte imaterial do homem?",
+    "pages": "Página 56",
+    "textPreview": "Resposta oficial: Providência Divina é a atividade contínua de Deus pela qual Ele preserva, sustenta e conduz soberanamente todas as criaturas e eventos no cumprimento de Seus desígnios. A Bíblia ensina que o homem teve seu corpo formado do pó da terra e sua natureza imaterial gerada pelo sopro vi...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 33,
+    "keywords": "providência divina e origem do homem o que é providência divina e como a bíblia relata a criação do corpo e da parte imaterial do homem? providência divina é a atividade contínua de deus pela qual ele preserva, sustenta e conduz soberanamente todas as criaturas e eventos no cumprimento de seus desígnios. a bíblia ensina que o homem teve seu corpo formado do pó da terra e sua natureza imaterial gerada pelo sopro vivificador de deus (gn 2.7). providencia divina preserva e governa corpo do po da terra natureza imaterial sopro de deus genesis 2.7 página 56"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 34 • Constituição Humana",
+    "title": "Diferencie Dicotomia, Tricotomia e Monismo na constituição do ser humano.",
+    "pages": "Páginas 57-58",
+    "textPreview": "Resposta oficial: Dicotomia sustenta que o ser humano é constituído de duas partes: material (corpo) e imaterial (alma/espírito). Tricotomia sustenta que o ser humano é composto de três elementos distintos: corpo físico, alma (sede da personalidade terrena) e espírito (contato direto com Deus). Mo...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 34,
+    "keywords": "constituição humana diferencie dicotomia, tricotomia e monismo na constituição do ser humano. dicotomia sustenta que o ser humano é constituído de duas partes: material (corpo) e imaterial (alma/espírito). tricotomia sustenta que o ser humano é composto de três elementos distintos: corpo físico, alma (sede da personalidade terrena) e espírito (contato direto com deus). monismo defende que o homem não pode ter existência consciente separada do corpo físico (rejeitado). dicotomia duas partes corpo e alma/espirito tricotomia tres partes corpo alma espirito monismo páginas 57-58"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 35 • Origem da Alma",
+    "title": "Quais são as duas principais teses na história da igreja acerca da origem da alma humana?",
+    "pages": "Página 58",
+    "textPreview": "Resposta oficial: 1) Criacionismo: afirma que Deus cria de forma imediata uma nova alma para cada pessoa entre o momento da concepção e o nascimento; e 2) Traducionismo: sustenta que alma e corpo são transmitidos e herdados simultaneamente dos pais biológicos no instante da concepção....",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 35,
+    "keywords": "origem da alma quais são as duas principais teses na história da igreja acerca da origem da alma humana? 1) criacionismo: afirma que deus cria de forma imediata uma nova alma para cada pessoa entre o momento da concepção e o nascimento; e 2) traducionismo: sustenta que alma e corpo são transmitidos e herdados simultaneamente dos pais biológicos no instante da concepção. criacionismo deus cria nova alma traducionismo herdada dos pais página 58"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 36 • Imagem de Deus (Imago Dei)",
+    "title": "Em que consiste a Imago Dei no homem e quais são os seus quatro aspectos específicos?",
+    "pages": "Páginas 59-60",
+    "textPreview": "Resposta oficial: A Imago Dei consiste no fato de o homem ser criado semelhante a Deus e representá-Lo na terra, distinguindo-o de todas as outras criaturas e fazendo-o o clímax da criação. Não é física; manifesta-se nos aspectos moral (justiça original), espiritual (comunhão e imortalidade), ment...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 36,
+    "keywords": "imagem de deus (imago dei) em que consiste a imago dei no homem e quais são os seus quatro aspectos específicos? a imago dei consiste no fato de o homem ser criado semelhante a deus e representá-lo na terra, distinguindo-o de todas as outras criaturas e fazendo-o o clímax da criação. não é física; manifesta-se nos aspectos moral (justiça original), espiritual (comunhão e imortalidade), mental/intelectual (razão e consciência) e relacional (afeto e capacidade comunitária). imago dei nao fisica moral espiritual mental relacional justica original páginas 59-60"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 37 • Definição e Origem do Pecado",
+    "title": "Como o Catecismo Maior define o pecado e em que consiste a culpa e a poluição decorrentes dele?",
+    "pages": "Páginas 60-61",
+    "textPreview": "Resposta oficial: Pecado é qualquer falta de conformidade com, ou transgressão de qualquer lei de Deus dada à criatura moral (por ato, omissão, disposição ou estado interior). Culpa refere-se à dívida legal que exige punição perante a justiça santa de Deus; poluição/corrupção refere-se à mancha mo...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 37,
+    "keywords": "definição e origem do pecado como o catecismo maior define o pecado e em que consiste a culpa e a poluição decorrentes dele? pecado é qualquer falta de conformidade com, ou transgressão de qualquer lei de deus dada à criatura moral (por ato, omissão, disposição ou estado interior). culpa refere-se à dívida legal que exige punição perante a justiça santa de deus; poluição/corrupção refere-se à mancha moral interna que atenta contra a santidade divina. catecismo maior falta de conformidade transgressao da lei culpa divida legal poluicao mancha moral páginas 60-61"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 38 • Teorias de Imputação do Pecado",
+    "title": "Resuma as visões Pelagiana, Federal e Agostiniana sobre como o pecado de Adão afetou a raça humana.",
+    "pages": "Página 62",
+    "textPreview": "Resposta oficial: 1) Pelagiana: o pecado afetou apenas Adão; toda criança nasce pura e peca apenas por imitação (heresia). 2) Federal: Adão era o representante jurídico de toda a humanidade no pacto; ao cair, sua culpa legal foi imputada judicialmente a todos os seus descendentes. 3) Agostiniana (...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 38,
+    "keywords": "teorias de imputação do pecado resuma as visões pelagiana, federal e agostiniana sobre como o pecado de adão afetou a raça humana. 1) pelagiana: o pecado afetou apenas adão; toda criança nasce pura e peca apenas por imitação (heresia). 2) federal: adão era o representante jurídico de toda a humanidade no pacto; ao cair, sua culpa legal foi imputada judicialmente a todos os seus descendentes. 3) agostiniana (chefia natural): todos os homens estavam biologicamente e seminalmente em adão e pecaram organicamente nele. pelagiana afetou so a adao federal representante pactual agostiniana chefia natural seminal página 62"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 39 • Pecado Original e Depravação Total",
+    "title": "O que é Pecado Original e Depravação Total, e quais são os quatro níveis de castigo divino contra o pecado?",
+    "pages": "Páginas 63-64",
+    "textPreview": "Resposta oficial: Pecado Original é a condição e o estado decaído com o qual todo ser humano já nasce (abrangendo culpa original imputada e corrupção nativa). Depravação Total é a perda da justiça original e a contaminação de todas as faculdades humanas pelo mal, tornando o homem incapaz de se sal...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 39,
+    "keywords": "pecado original e depravação total o que é pecado original e depravação total, e quais são os quatro níveis de castigo divino contra o pecado? pecado original é a condição e o estado decaído com o qual todo ser humano já nasce (abrangendo culpa original imputada e corrupção nativa). depravação total é a perda da justiça original e a contaminação de todas as faculdades humanas pelo mal, tornando o homem incapaz de se salvar. o castigo divino desdobra-se em: morte espiritual, sofrimentos terrenais, morte física e morte eterna. pecado original depravacao total incapaz de salvar morte espiritual sofrimentos morte fisica morte eterna páginas 63-64"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 40 • A Pessoa de Cristo",
+    "title": "Qual a formulação ortodoxa sobre a Pessoa e as naturezas de Cristo, e por que Ele precisava ser simultaneamente Deus e homem?",
+    "pages": "Páginas 64-67",
+    "textPreview": "Resposta oficial: Cristo é uma só Pessoa indivisível na qual coexistem duas naturezas perfeitas: a divina e a humana. Precisava ser homem porque a penalidade cabia à humanidade e exigia obediência e sofrimento na carne; e precisava ser Deus para que Seu sacrifício tivesse mérito e poder infinitos,...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 40,
+    "keywords": "a pessoa de cristo qual a formulação ortodoxa sobre a pessoa e as naturezas de cristo, e por que ele precisava ser simultaneamente deus e homem? cristo é uma só pessoa indivisível na qual coexistem duas naturezas perfeitas: a divina e a humana. precisava ser homem porque a penalidade cabia à humanidade e exigia obediência e sofrimento na carne; e precisava ser deus para que seu sacrifício tivesse mérito e poder infinitos, suportasse a ira santa divina e conquistasse a ressurreição e a vitória sobre a morte. uma pessoa duas naturezas verdadeiro deus verdadeiro homem pagar pelo homem merito infinito páginas 64-67"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 41 • Heresias Cristológicas",
+    "title": "Identifique e defina: Ebionismo, Arianismo, Docetismo, Apolinarismo, Nestorianismo e Eutiquianismo.",
+    "pages": "Páginas 65-68",
+    "textPreview": "Resposta oficial: 1) Ebionismo: Jesus era mero homem adotado por Deus; 2) Arianismo: Jesus não era Deus eterno, mas a primeira e maior criatura criada; 3) Docetismo: o corpo de Jesus era ilusão fantasmagórica; 4) Apolinarismo: Jesus tinha corpo carnal, mas a mente/alma humana foi substituída pelo ...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 41,
+    "keywords": "heresias cristológicas identifique e defina: ebionismo, arianismo, docetismo, apolinarismo, nestorianismo e eutiquianismo. 1) ebionismo: jesus era mero homem adotado por deus; 2) arianismo: jesus não era deus eterno, mas a primeira e maior criatura criada; 3) docetismo: o corpo de jesus era ilusão fantasmagórica; 4) apolinarismo: jesus tinha corpo carnal, mas a mente/alma humana foi substituída pelo logos divino; 5) nestorianismo: jesus era duas pessoas distintas habitando juntas; 6) eutiquianismo: as duas naturezas misturaram-se formando uma terceira natureza híbrida. ebionismo mero homem arianismo criatura docetismo ilusao apolinarismo sem mente humana nestorianismo duas pessoas eutiquianismo natureza mista páginas 65-68"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 42 • Humilhação e Kénosis",
+    "title": "O que implica a Kénosis (esvaziamento) e em que consiste o estado de humilhação de Cristo?",
+    "pages": "Páginas 68-70",
+    "textPreview": "Resposta oficial: A Kénosis significa que Cristo renunciou voluntariamente à glória de Sua majestade celestial e ao uso independente de Seus atributos divinos para assumir a condição de servo, sem jamais abrir mão de Sua divindade essencial. O estado de humilhação consiste em Sua encarnação humild...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 42,
+    "keywords": "humilhação e kénosis o que implica a kénosis (esvaziamento) e em que consiste o estado de humilhação de cristo? a kénosis significa que cristo renunciou voluntariamente à glória de sua majestade celestial e ao uso independente de seus atributos divinos para assumir a condição de servo, sem jamais abrir mão de sua divindade essencial. o estado de humilhação consiste em sua encarnação humilde, sujeição à lei moral, sofrimento vicário, morte de cruz e sepultamento. kenosis esvaziamento forma de servo nao perdeu divindade encarnacao sofrimento morte de cruz sepultamento páginas 68-70"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 43 • Exaltação de Cristo",
+    "title": "Quais são as quatro etapas do estado de exaltação de Cristo e qual a relevância de cada uma para a redenção?",
+    "pages": "Páginas 71",
+    "textPreview": "Resposta oficial: 1) Ressurreição corporal ao terceiro dia (vitória definitiva sobre o pecado e a morte); 2) Ascensão visível aos céus (triunfo sobre principados); 3) Assento à destra de Deus Pai (exercício contínuo do sumo sacerdócio intercessório e soberania); e 4) Segunda Vinda em poder e grand...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 43,
+    "keywords": "exaltação de cristo quais são as quatro etapas do estado de exaltação de cristo e qual a relevância de cada uma para a redenção? 1) ressurreição corporal ao terceiro dia (vitória definitiva sobre o pecado e a morte); 2) ascensão visível aos céus (triunfo sobre principados); 3) assento à destra de deus pai (exercício contínuo do sumo sacerdócio intercessório e soberania); e 4) segunda vinda em poder e grande glória para julgar a história e consumar o reino. ressurreicao corporal ascensao assento a destra segunda vinda gloriosa páginas 71"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 44 • Os Três Ofícios de Cristo",
+    "title": "Descreva o tríplice ofício de Cristo (Profeta, Sacerdote e Rei) fundamentando cada um biblicamente.",
+    "pages": "Páginas 71-75",
+    "textPreview": "Resposta oficial: 1) Profeta: revela plenamente o Pai e a verdade divina (Dt 18.15; Jo 8.26-28), sendo a própria Fonte da revelação; 2) Sacerdote: reconcilia os pecadores oferecendo a Si mesmo em expiação e intercedendo perpetuamente (Hb 5; 7.25); 3) Rei: governa soberanamente o cosmos, subjuga os...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 44,
+    "keywords": "os três ofícios de cristo descreva o tríplice ofício de cristo (profeta, sacerdote e rei) fundamentando cada um biblicamente. 1) profeta: revela plenamente o pai e a verdade divina (dt 18.15; jo 8.26-28), sendo a própria fonte da revelação; 2) sacerdote: reconcilia os pecadores oferecendo a si mesmo em expiação e intercedendo perpetuamente (hb 5; 7.25); 3) rei: governa soberanamente o cosmos, subjuga os inimigos e reina sobre a sua igreja (sl 2; ef 1.20-22). profeta revela sacerdote expia e intercede rei governa soberanamente páginas 71-75"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 45 • A Doutrina da Expiação",
+    "title": "Explique o significado de 'expiação vicária' e defina os termos: Sacrifício, Propiciação, Substituição e Reconciliação.",
+    "pages": "Páginas 73-74",
+    "textPreview": "Resposta oficial: Expiação vicária é a anulação da culpa e remoção do pecado por meio da morte penal de Cristo no lugar do pecador. 1) Sacrifício: oferta pura que cobre a transgressão; 2) Propiciação: aplacamento e satisfação da ira santa de Deus; 3) Substituição: Jesus sofre a penalidade cabível ...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 45,
+    "keywords": "a doutrina da expiação explique o significado de 'expiação vicária' e defina os termos: sacrifício, propiciação, substituição e reconciliação. expiação vicária é a anulação da culpa e remoção do pecado por meio da morte penal de cristo no lugar do pecador. 1) sacrifício: oferta pura que cobre a transgressão; 2) propiciação: aplacamento e satisfação da ira santa de deus; 3) substituição: jesus sofre a penalidade cabível a nós em nosso favor; 4) reconciliação: restabelecimento da paz e comunhão entre deus e o homem redimido. expiacao vicaria sacrificio propiciação aplacar a ira substituicao no lugar do pecador reconciliacao paz páginas 73-74"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 46 • Divindade do Espírito Santo",
+    "title": "Quais são as quatro ordens de provas bíblicas que atestam a plena divindade do Espírito Santo?",
+    "pages": "Página 75",
+    "textPreview": "Resposta oficial: 1) Nomes divinos (chamado explicitamente de Deus em At 5.3-4 e 1Co 3.16); 2) Atributos divinos (onipresença em Sl 139, onisciência em 1Co 2, onipotência em Rm 15, eternidade em Hb 9.14); 3) Obras divinas exclusivas (criação cósmica, regeneração humana e ressurreição dos mortos); ...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 46,
+    "keywords": "divindade do espírito santo quais são as quatro ordens de provas bíblicas que atestam a plena divindade do espírito santo? 1) nomes divinos (chamado explicitamente de deus em at 5.3-4 e 1co 3.16); 2) atributos divinos (onipresença em sl 139, onisciência em 1co 2, onipotência em rm 15, eternidade em hb 9.14); 3) obras divinas exclusivas (criação cósmica, regeneração humana e ressurreição dos mortos); 4) honras divinas prestadas (fórmula batismal em mt 28.19 e bênção apostólica em 2co 13.13). nomes divinos atributos divinos obras divinas honras divinas atos 5.3-4 trindade página 75"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 47 • Personalidade do Espírito Santo",
+    "title": "Como as Escrituras comprovam que o Espírito Santo é uma pessoa e não uma força ou energia impessoal?",
+    "pages": "Páginas 76-77",
+    "textPreview": "Resposta oficial: Comprovam ao atribuir-Lhe propriedades de personalidade: intelecto (conhece as profundezas de Deus, 1Co 2.11), afetividade (pode ser entristecido, Ef 4.30) e vontade (distribui dons como Lhe apraz, 1Co 12.11). Além disso, Jesus usa pronomes pessoais e títulos masculinos (o Consol...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 47,
+    "keywords": "personalidade do espírito santo como as escrituras comprovam que o espírito santo é uma pessoa e não uma força ou energia impessoal? comprovam ao atribuir-lhe propriedades de personalidade: intelecto (conhece as profundezas de deus, 1co 2.11), afetividade (pode ser entristecido, ef 4.30) e vontade (distribui dons como lhe apraz, 1co 12.11). além disso, jesus usa pronomes pessoais e títulos masculinos (o consolador) para referir-se a ele, e a bíblia relata ações pessoais como ensinar, interceder e ser alvo de mentira (at 5.3). intelecto vontade afetividade entristecido consolador nao e forca impessoal páginas 76-77"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 48 • Atuação do Espírito Santo",
+    "title": "Qual a diferença essencial da atuação do Espírito Santo sobre os homens no Antigo Testamento comparado ao Novo Testamento?",
+    "pages": "Páginas 77-78",
+    "textPreview": "Resposta oficial: No Antigo Testamento, o Espírito Santo descia sobre os homens apenas de forma temporária e esporádica para capacitá-los para serviços específicos (reis, profetas e juízes), retirando-se ao término da missão e não habitando interiormente neles. No Novo Testamento (a partir do Pent...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 48,
+    "keywords": "atuação do espírito santo qual a diferença essencial da atuação do espírito santo sobre os homens no antigo testamento comparado ao novo testamento? no antigo testamento, o espírito santo descia sobre os homens apenas de forma temporária e esporádica para capacitá-los para serviços específicos (reis, profetas e juízes), retirando-se ao término da missão e não habitando interiormente neles. no novo testamento (a partir do pentecostes), ele habita permanente e ininterruptamente em todos os regenerados como selo da redenção. at temporario servicos especificos nt habitacao permanente pentecostes selo páginas 77-78"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 49 • Graça Comum e Graça Especial",
+    "title": "O que é Graça Comum e ela é suficiente para salvar o homem perdido? Justifique.",
+    "pages": "Páginas 80-81",
+    "textPreview": "Resposta oficial: Graça Comum são as operações providenciais pelas quais Deus concede benefícios materiais e sociais a todos os homens indiscriminadamente (chuva, alimentos, razão, ordem pública), refreando o mal no mundo. Ela NÃO é suficiente para salvar o homem porque reprime o pecado externamen...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 49,
+    "keywords": "graça comum e graça especial o que é graça comum e ela é suficiente para salvar o homem perdido? justifique. graça comum são as operações providenciais pelas quais deus concede benefícios materiais e sociais a todos os homens indiscriminadamente (chuva, alimentos, razão, ordem pública), refreando o mal no mundo. ela não é suficiente para salvar o homem porque reprime o pecado externamente, mas não regenera o coração nem purifica a natureza humana decaída. a salvação requer a graça especial salvífica. graca comum beneficios gerais refreia o mal nao salva nao purifica a natureza graca especial páginas 80-81"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 50 • Chamado Geral e Chamado Eficaz",
+    "title": "Diferencie Chamado Geral de Chamado Eficaz na proclamação do Evangelho.",
+    "pages": "Página 82",
+    "textPreview": "Resposta oficial: Chamado Geral é o convite exterior do Evangelho feito a todas as pessoas indistintamente pela pregação humana, convidando ao arrependimento e prometendo vida eterna. Chamado Eficaz é a intervenção interna soberana de Deus através do Espírito Santo que atua no coração do eleito de...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 50,
+    "keywords": "chamado geral e chamado eficaz diferencie chamado geral de chamado eficaz na proclamação do evangelho. chamado geral é o convite exterior do evangelho feito a todas as pessoas indistintamente pela pregação humana, convidando ao arrependimento e prometendo vida eterna. chamado eficaz é a intervenção interna soberana de deus através do espírito santo que atua no coração do eleito de tal maneira que ele responde infalivelmente com fé salvífica regenerada. chamado geral exterior a todos chamado eficaz interno pelo espirito fe salvifica página 82"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 51 • A Conversão: Fé e Arrependimento",
+    "title": "Quais são as facetas do verdadeiro Arrependimento e quais são os componentes da Fé salvífica genuína?",
+    "pages": "Páginas 82-83",
+    "textPreview": "Resposta oficial: Arrependimento genuíno abrange: 1) Mudança de conceito mental sobre o pecado (intelectual); 2) Mudança de sentimento/tristeza segundo Deus (emocional); 3) Mudança de propósito/resolução de abandonar o mal (volitivo). A Fé salvífica compõe-se de: Conhecimento da verdade (intelectu...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 51,
+    "keywords": "a conversão: fé e arrependimento quais são as facetas do verdadeiro arrependimento e quais são os componentes da fé salvífica genuína? arrependimento genuíno abrange: 1) mudança de conceito mental sobre o pecado (intelectual); 2) mudança de sentimento/tristeza segundo deus (emocional); 3) mudança de propósito/resolução de abandonar o mal (volitivo). a fé salvífica compõe-se de: conhecimento da verdade (intelectual), assentimento da certeza dela (emocional/convicção) e confiança/entrega pessoal a cristo (volitivo). arrependimento conceito sentimento proposito fe conhecimento assentimento confianca páginas 82-83"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 52 • Doutrina da Regeneração",
+    "title": "O que é a Regeneração segundo a teologia bíblica e quais são as suas causas e efeitos?",
+    "pages": "Páginas 20, 82, 84",
+    "textPreview": "Resposta oficial: Regeneração é a transformação sobrenatural e radical instantânea operada pelo Espírito Santo na qual o pecador nasce de novo, tornando-se nova criatura em Cristo. Tem como causa a graça soberana de Deus mediante a Palavra e a fé. Seus efeitos são: perdão dos pecados, adoção de fi...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 52,
+    "keywords": "doutrina da regeneração o que é a regeneração segundo a teologia bíblica e quais são as suas causas e efeitos? regeneração é a transformação sobrenatural e radical instantânea operada pelo espírito santo na qual o pecador nasce de novo, tornando-se nova criatura em cristo. tem como causa a graça soberana de deus mediante a palavra e a fé. seus efeitos são: perdão dos pecados, adoção de filhos, habitação do espírito santo, libertação do castigo eterno e concessão de nova inclinação para a santidade. novo nascimento obra do espirito nova criatura perdao adocao libertacao da condenacao páginas 20, 82, 84"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 53 • Justificação Forense",
+    "title": "Defina a Justificação pela fé, explicando por que ela é chamada de ato forense e apontando seus elementos negativo e positivo.",
+    "pages": "Páginas 20-21, 85",
+    "textPreview": "Resposta oficial: Justificação é o ato legal, instantâneo e forense no qual Deus perdoa o pecador e o declara judicialmente justo diante de Seu tribunal, com base exclusiva nos méritos da justiça de Cristo imputada pela fé. Elemento negativo: cancelamento total da culpa e livramento da ira penal d...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 53,
+    "keywords": "justificação forense defina a justificação pela fé, explicando por que ela é chamada de ato forense e apontando seus elementos negativo e positivo. justificação é o ato legal, instantâneo e forense no qual deus perdoa o pecador e o declara judicialmente justo diante de seu tribunal, com base exclusiva nos méritos da justiça de cristo imputada pela fé. elemento negativo: cancelamento total da culpa e livramento da ira penal da lei. elemento positivo: imputação da justiça perfeita de cristo, adoção de filhos e direito irrevogável à vida eterna. ato forense declara justo imputacao da justica negativo remocao da culpa positivo adocao e vida eterna páginas 20-21, 85"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 54 • Santificação do Crente",
+    "title": "Qual a natureza da Santificação cristã, por que ela é considerada 'imperfeita em grau nesta vida' e quais são os seus meios?",
+    "pages": "Páginas 21, 85-86",
+    "textPreview": "Resposta oficial: Santificação é a obra sobrenatural contínua de Deus na qual o crente coopera ativamente, mortificando o velho homem e desenvolvendo a conformidade com o caráter de Cristo. É imperfeita em grau nesta vida porque enquanto viver o crente terá que lutar contra os resquícios da nature...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 54,
+    "keywords": "santificação do crente qual a natureza da santificação cristã, por que ela é considerada 'imperfeita em grau nesta vida' e quais são os seus meios? santificação é a obra sobrenatural contínua de deus na qual o crente coopera ativamente, mortificando o velho homem e desenvolvendo a conformidade com o caráter de cristo. é imperfeita em grau nesta vida porque enquanto viver o crente terá que lutar contra os resquícios da natureza carnal decaída, não atingindo perfeição absoluta antes da glorificação. seus meios são a palavra de deus, a oração e a comunhão no espírito (jo 17.17). processo continuo cooperativo imperfeita em grau luta contra o pecado palavra e oracao páginas 21, 85-86"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 55 • Perseverança dos Santos",
+    "title": "O que preconiza a doutrina da Perseverança dos Santos e em quais fundamentos bíblicos ela repousa?",
+    "pages": "Páginas 22, 86-87",
+    "textPreview": "Resposta oficial: Preconiza que aqueles que foram verdadeiramente regenerados e justificados pela graça de Deus jamais cairão total ou definitivamente da salvação, mas perseverarão até o fim guardados pelo poder onipotente do Pai. Repousa no amor eterno e imutável de Deus, na eficácia infalível do...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 55,
+    "keywords": "perseverança dos santos o que preconiza a doutrina da perseverança dos santos e em quais fundamentos bíblicos ela repousa? preconiza que aqueles que foram verdadeiramente regenerados e justificados pela graça de deus jamais cairão total ou definitivamente da salvação, mas perseverarão até o fim guardados pelo poder onipotente do pai. repousa no amor eterno e imutável de deus, na eficácia infalível do sangue e intercessão de cristo, no selo permanente do espírito santo e nas promessas explícitas de jesus (jo 10.28-29; rm 8.35-39). perseveranca dos santos nao caem definitivamente guardados por deus joao 10.28-29 romanos 8.38-39 seguranca eterna páginas 22, 86-87"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 56 • Glorificação",
+    "title": "O que é a Glorificação e o que acontecerá com o corpo e a condição dos salvos nessa fase final?",
+    "pages": "Páginas 21, 87",
+    "textPreview": "Resposta oficial: A Glorificação é o ápice e ponto culminante da salvação, sendo o estado final e perpétuo de perfeita felicidade dos remidos. Na glorificação, os salvos receberão corpos incorruptíveis, imortais e semelhantes ao corpo glorificado de Cristo, livres de todo pecado, dor ou morte, hab...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 56,
+    "keywords": "glorificação o que é a glorificação e o que acontecerá com o corpo e a condição dos salvos nessa fase final? a glorificação é o ápice e ponto culminante da salvação, sendo o estado final e perpétuo de perfeita felicidade dos remidos. na glorificação, os salvos receberão corpos incorruptíveis, imortais e semelhantes ao corpo glorificado de cristo, livres de todo pecado, dor ou morte, habitando eternamente na presença de deus. ponto culminante estado final permanente corpos incorruptiveis semelhantes a cristo 1co 15.51-53 páginas 21, 87"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 57 • Estado Intermediário das Almas",
+    "title": "Descreva a posição ortodoxa bíblica sobre o estado intermediário e mencione três teorias errôneas que a Bíblia rejeita.",
+    "pages": "Páginas 29-30, 92-93",
+    "textPreview": "Resposta oficial: A posição ortodoxa ensina que entre a morte física e a ressurreição final o espírito permanece consciente: os justos entram no gozo e consolo da presença de Deus ('dormir no Senhor'), enquanto os ímpios experimentam separação e tormento consciente (Lc 16). Três teorias errôneas r...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 57,
+    "keywords": "estado intermediário das almas descreva a posição ortodoxa bíblica sobre o estado intermediário e mencione três teorias errôneas que a bíblia rejeita. a posição ortodoxa ensina que entre a morte física e a ressurreição final o espírito permanece consciente: os justos entram no gozo e consolo da presença de deus ('dormir no senhor'), enquanto os ímpios experimentam separação e tormento consciente (lc 16). três teorias errôneas rejeitadas são: 1) o sono da alma (psicopaniquia dos adventistas); 2) o purgatório (católico romano); e 3) a ressurreição instantânea (neo-ortodoxa/liberal). estado intermediario consciente presenca consoladora dos justos tormento dos impios rejeita sono da alma rejeita purgatorio páginas 29-30, 92-93"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 58 • A Segunda Vinda de Cristo",
+    "title": "Quais são as cinco características essenciais da Segunda Vinda de Jesus Cristo reveladas nas Escrituras?",
+    "pages": "Páginas 30, 93",
+    "textPreview": "Resposta oficial: A Segunda Vinda será: 1) Pessoal (o próprio Jesus retornará, At 1.11); 2) Física/Corporal (em Seu corpo ressurreto, Hb 9.28); 3) Visível (todo olho O verá, Mt 24.30); 4) Repentina/Inesperada (como o relâmpago e o ladrão da noite, 1Ts 5.2); e 5) Gloriosa e triunfal (com Seus anjos...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 58,
+    "keywords": "a segunda vinda de cristo quais são as cinco características essenciais da segunda vinda de jesus cristo reveladas nas escrituras? a segunda vinda será: 1) pessoal (o próprio jesus retornará, at 1.11); 2) física/corporal (em seu corpo ressurreto, hb 9.28); 3) visível (todo olho o verá, mt 24.30); 4) repentina/inesperada (como o relâmpago e o ladrão da noite, 1ts 5.2); e 5) gloriosa e triunfal (com seus anjos em majestade e vitória total sobre o mal, 1co 15.25). pessoal fisica visivel repentina gloriosa e triunfal páginas 30, 93"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 59 • As Três Escolas sobre o Milênio",
+    "title": "Conceitue Pré-milenismo, Pós-milenismo e Amilenismo conforme a apostila.",
+    "pages": "Páginas 93-94",
+    "textPreview": "Resposta oficial: 1) Pré-milenismo: sustenta que Cristo retornará pessoal e visivelmente antes do milênio para instaurar um reinado terreno de 1000 anos literais na terra. 2) Pós-milenismo: afirma que a proclamação do Evangelho alcançará sucesso global convertendo a maioria das nações e inaugurand...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 59,
+    "keywords": "as três escolas sobre o milênio conceitue pré-milenismo, pós-milenismo e amilenismo conforme a apostila. 1) pré-milenismo: sustenta que cristo retornará pessoal e visivelmente antes do milênio para instaurar um reinado terreno de 1000 anos literais na terra. 2) pós-milenismo: afirma que a proclamação do evangelho alcançará sucesso global convertendo a maioria das nações e inaugurando o milênio de paz, ao final do qual cristo retornará. 3) amilenismo: defende que o milênio é simbólico e corresponde ao reinado espiritual de cristo na era da igreja, seguindo-se o juízo final logo após a segunda vinda. pre-milenismo reinado literal de 1000 anos pos-milenismo evangelizacao cristianiza o mundo amilenismo milenio simbolico da igreja páginas 93-94"
+  },
+  {
+    "type": "Simulado 60 Questões",
+    "badge": "Questão 60 • Destinos Finais e Ética Cristã",
+    "title": "O que são o Céu e o Inferno segundo a teologia bíblica e como se define a Ética Cristã?",
+    "pages": "Páginas 94-95",
+    "textPreview": "Resposta oficial: O Céu é a habitação eterna onde Deus manifesta a plenitude mais completa de Sua presença abençoadora aos santos justificados. O Inferno é o lugar real de castigo eterno, justo e consciente para os ímpios rebeldes e Satanás, separados da graça divina. Ética Cristã é o conjunto ord...",
+    "actionType": "openSimuladoQuestion",
+    "questionNum": 60,
+    "keywords": "destinos finais e ética cristã o que são o céu e o inferno segundo a teologia bíblica e como se define a ética cristã? o céu é a habitação eterna onde deus manifesta a plenitude mais completa de sua presença abençoadora aos santos justificados. o inferno é o lugar real de castigo eterno, justo e consciente para os ímpios rebeldes e satanás, separados da graça divina. ética cristã é o conjunto ordenado de princípios e mandamentos fundamentados na revelação das escrituras e no caráter moral de deus para guiar o agir e a conduta justa do crente no mundo. ceu presenca plena de deus inferno castigo eterno e consciente etica crista revelacao biblica conduta moral páginas 94-95"
+  },
+  {
+    "type": "Apostila Completa",
+    "badge": "Seção • Páginas 1-4",
+    "title": "Sumário Geral (Págs. 1 a 4)",
+    "pages": "1-4",
+    "textPreview": "\n Sumário da Apostila\n Família ................................................................................... 5\n Batismo e Ceia ............................................................................ 7\n Autonomia e soberania da Igreja ........................................",
+    "actionType": "openApostilaSection",
+    "sectionId": "sec_sumario",
+    "keywords": "sumário geral (págs. 1 a 4) 1-4 \n### sumário da apostila\n* **família** ................................................................................... 5\n* **batismo e ceia** ............................................................................ 7\n* **autonomia e soberania da igreja** ........................................................... 8\n* **diaconato** ................................................................................. 9\n* **visitação** ..........................................................."
+  },
+  {
+    "type": "Apostila Completa",
+    "badge": "Seção • Páginas 5-12",
+    "title": "Bloco 1: Vida Comunitária e Eclesiologia Prática (Págs. 5 a 12)",
+    "pages": "5-12",
+    "textPreview": "\n Família (Pág. 5-6)\nA família é uma instituição criada por Deus, onde podemos viver o amor, harmonia, como também os grandes desafios de se viver unido. Como é uma instituição divina o homem não pode corrompê-la. Está no plano de Deus (Ef 5.31). Deus criou a família com o propósito de ser o alic...",
+    "actionType": "openApostilaSection",
+    "sectionId": "sec_bloco1",
+    "keywords": "bloco 1: vida comunitária e eclesiologia prática (págs. 5 a 12) 5-12 \n### família (pág. 5-6)\na família é uma instituição criada por deus, onde podemos viver o amor, harmonia, como também os grandes desafios de se viver unido. como é uma instituição divina o homem não pode corrompê-la. está no plano de deus (ef 5.31). deus criou a família com o propósito de ser o alicerce para cada pessoa. o alicerce é a base que oferece sustentação e firmeza para a construção de qualquer edifício; sendo frágil, coloca em risco o edifício por mais luxuoso que possa ser. o papel da"
+  },
+  {
+    "type": "Apostila Completa",
+    "badge": "Seção • Páginas 13-30",
+    "title": "Bloco 2: Declaração Doutrinária da CBB (Págs. 13 a 30)",
+    "pages": "13-30",
+    "textPreview": "\n Princípios Históricos dos Batistas (Pág. 13-14)\n1. Escrituras Sagradas como única regra inerrante de fé e conduta.\n2. Igreja local como comunidade democrática e autônoma de regenerados e biblicamente batizados.\n3. Rigorosa separação entre Igreja e Estado.\n4. Absoluta liberdade de consciência re...",
+    "actionType": "openApostilaSection",
+    "sectionId": "sec_bloco2",
+    "keywords": "bloco 2: declaração doutrinária da cbb (págs. 13 a 30) 13-30 \n### princípios históricos dos batistas (pág. 13-14)\n1. escrituras sagradas como única regra inerrante de fé e conduta.\n2. igreja local como comunidade democrática e autônoma de regenerados e biblicamente batizados.\n3. rigorosa separação entre igreja e estado.\n4. absoluta liberdade de consciência religiosa.\n5. responsabilidade individual de cada pessoa perante deus (sacerdócio dos crentes).\n6. autenticidade e apostolicidade das congregações neotestamentárias.\n\n### os 19 artigos da cbb em síntese"
+  },
+  {
+    "type": "Apostila Completa",
+    "badge": "Seção • Páginas 31-33",
+    "title": "Bloco 3: Identidade - Dez Razões Porque Sou Crente Batista (Págs. 31 a 33)",
+    "pages": "31-33",
+    "textPreview": "\n1. Líder sem par: Jesus Cristo como único Senhor e cabeça supremo da igreja.\n2. Culto com decência e ordem: Cultos simples, reverentes e alegres, sem rituais secretos ou ocultos.\n3. Um só livro divino: A Bíblia como única autoridade normativa para fé e conduta.\n4. Só Jesus Cristo salv...",
+    "actionType": "openApostilaSection",
+    "sectionId": "sec_bloco3",
+    "keywords": "bloco 3: identidade - dez razões porque sou crente batista (págs. 31 a 33) 31-33 \n1. **líder sem par:** jesus cristo como único senhor e cabeça supremo da igreja.\n2. **culto com decência e ordem:** cultos simples, reverentes e alegres, sem rituais secretos ou ocultos.\n3. **um só livro divino:** a bíblia como única autoridade normativa para fé e conduta.\n4. **só jesus cristo salva:** salvação exclusiva pelos méritos da cruz de cristo.\n5. **relacionamento direto com deus:** sacerdócio de todos os crentes, orando diretamente ao pai sem mediadores humanos.\n6. **autonomia e democ"
+  },
+  {
+    "type": "Apostila Completa",
+    "badge": "Seção • Páginas 34-95",
+    "title": "Bloco 4: Catecismo de Teologia Sistemática em Q&A (Págs. 34 a 95)",
+    "pages": "34-95",
+    "textPreview": "\n Bibliologia & Teologia Própria (Págs. 34-56)\n Teologia: Conhecimento sistematizado de Deus e de Suas relações com o cosmos.\n Revelação Geral: Pelas obras de Deus (natureza, consciência moral, providência na história). Não é suficiente para salvação; serve para deixar o homem culpado p...",
+    "actionType": "openApostilaSection",
+    "sectionId": "sec_bloco4",
+    "keywords": "bloco 4: catecismo de teologia sistemática em q&a (págs. 34 a 95) 34-95 \n### bibliologia & teologia própria (págs. 34-56)\n* **teologia:** conhecimento sistematizado de deus e de suas relações com o cosmos.\n* **revelação geral:** pelas obras de deus (natureza, consciência moral, providência na história). não é suficiente para salvação; serve para deixar o homem culpado perante a justiça.\n* **teologia natural e provas:** cosmológico (causa do universo), ontológico (ideia do ser perfeito), teleológico (ordem e inteligência cósmica), moral (lei moral objetiva), históric"
+  }
+];
+if (typeof module !== "undefined") module.exports = searchIndexData;
